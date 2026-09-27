@@ -1,0 +1,4849 @@
+[2026-09-27 10:34:23][DEBUG] Received request: POST to /v1/chat/completions with body {
+  "model": "qwen-local",
+  "messages": [
+    {
+      "role": "system",
+      "content": "x-anthropic-billing-header: cc_version=2.1.283.efe... <Truncated in logs> ...e alone if the answer may be further in the file.]"
+    },
+    {
+      "role": "user",
+      "content": "<system-reminder>\nAs you answer the user's questio... <Truncated in logs> ...he Kestrel Basin? Reply with just the designation."
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_4d674eae09e46aba05482ece63b84860_0",
+          "type": "function",
+          "function": {
+            "name": "Read",
+            "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file1.md\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_4d674eae09e46aba05482ece63b84860_0",
+      "content": "1\t# Ferrovial Survey of the Kestrel Basin\n2\t# Docu... <Truncated in logs> ...d entry 16223. Cross-reference volume 1, annex C2."
+    },
+    {
+      "role": "assistant",
+      "content": "\n\nThe first read was truncated at line 593 — continuing from there.\n\n",
+      "tool_calls": [
+        {
+          "id": "call_4126b61c648e451e98d6441cd6c924ee_0",
+          "type": "function",
+          "function": {
+            "name": "Read",
+            "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file1.md\",\"offset\":594}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_4126b61c648e451e98d6441cd6c924ee_0",
+      "content": "594\t- borehole 9717 / stratum 16: reading 44.32 at... <Truncated in logs> ...rovial Survey of the Kestrel Basin, volume 1.\n996\t"
+    },
+    {
+      "role": "assistant",
+      "content": "\n\nTANGERINE-LYNX"
+    },
+    {
+      "role": "user",
+      "content": "Read the file stress-corpus/file2.md completely — ... <Truncated in logs> ...Husbandry Manual? Reply with just the designation."
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_79aa57f38cc49b718632f10415eb14d2_0",
+          "type": "function",
+          "function": {
+            "name": "Read",
+            "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file2.md\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_79aa57f38cc49b718632f10415eb14d2_0",
+      "content": "1\t# Meridian Aviary Husbandry Manual\n2\t# Document ... <Truncated in logs> ...d entry 35564. Cross-reference volume 2, annex D7."
+    },
+    {
+      "role": "assistant",
+      "content": "\n\nContinuing with the rest of the file.\n\n",
+      "tool_calls": [
+        {
+          "id": "call_f6093421f1263b89dff55bb8405fa168_0",
+          "type": "function",
+          "function": {
+            "name": "Read",
+            "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file2.md\",\"offset\":592}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_f6093421f1263b89dff55bb8405fa168_0",
+      "content": "592\t- enclosure 6493 / flock 45: reading 47.67 at ... <Truncated in logs> ...f Meridian Aviary Husbandry Manual, volume 2.\n995\t"
+    },
+    {
+      "role": "assistant",
+      "content": "\n\nI've read the entire file (995 lines).\n\nThere is... <Truncated in logs> ...he question doesn't match the document's contents."
+    },
+    {
+      "role": "user",
+      "content": "Read the file stress-corpus/file3.md completely — ... <Truncated in logs> ...intenance Ledger? Reply with just the designation."
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_3ef4309b53ab97674231569fac329b9f_0",
+          "type": "function",
+          "function": {
+            "name": "Read",
+            "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file3.md\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_3ef4309b53ab97674231569fac329b9f_0",
+      "content": "1\t# Talgarth Textile Mill Maintenance Ledger\n2\t# D... <Truncated in logs> ... entry 16599. Cross-reference volume 3, annex G14."
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_bfc6bfc0379fe175b27e269cac3fcb2a_0",
+          "type": "function",
+          "function": {
+            "name": "Read",
+            "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file3.md\",\"offset\":591}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_bfc6bfc0379fe175b27e269cac3fcb2a_0",
+      "content": "591\t\n592\t## Section 3.51 — loom bank group 199, sh... <Truncated in logs> ...th Textile Mill Maintenance Ledger, volume 3.\n988\t"
+    },
+    {
+      "role": "assistant",
+      "content": "\n\nI've read the entire file (988 lines).\n\nNo desig... <Truncated in logs> ...he question doesn't match the document's contents."
+    },
+    {
+      "role": "user",
+      "content": "Read the file stress-corpus/file4.md completely — ... <Truncated in logs> ...on Plant Runbook? Reply with just the designation."
+    }
+  ],
+  "stream": true,
+  "max_tokens": 32000,
+  "reasoning_effort": "xhigh",
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "Agent",
+        "description": "Launch a new agent to handle complex, multi-step t... <Truncated in logs> ...er asks before it arrives, say it's still running.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "description": {
+              "description": "A short (3-5 word) description of the task",
+              "type": "string"
+            },
+            "prompt": {
+              "description": "The task for the agent to perform",
+              "type": "string"
+            },
+            "subagent_type": {
+              "description": "The type of specialized agent to use for this task",
+              "type": "string"
+            },
+            "model": {
+              "description": "Optional model override for this agent. Takes prec... <Truncated in logs> ...e: \"fork\" — forks always inherit the parent model.",
+              "type": "string",
+              "enum": [
+                "sonnet",
+                "opus",
+                "haiku",
+                "fable"
+              ]
+            },
+            "run_in_background": {
+              "description": "Agents run in the background by default; you will ... <Truncated in logs> ...he background so the user can hand you other work.",
+              "type": "boolean"
+            },
+            "isolation": {
+              "description": "Isolation mode. \"worktree\" creates a temporary git... <Truncated in logs> ...always runs in background; availability is gated).",
+              "type": "string",
+              "enum": [
+                "worktree",
+                "remote"
+              ]
+            }
+          },
+          "required": [
+            "description",
+            "prompt"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "Bash",
+        "description": "Executes a bash command and returns its output.\n\n-... <Truncated in logs> ...nversation's system-reminder, when one is present.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "command": {
+              "description": "The command to execute",
+              "type": "string"
+            },
+            "timeout": {
+              "description": "Optional timeout in milliseconds (max 600000)",
+              "type": "number"
+            },
+            "description": {
+              "description": "Clear, concise description of what this command do... <Truncated in logs> ...tch JSON from URL and extract data array elements\"",
+              "type": "string"
+            },
+            "run_in_background": {
+              "description": "Set to true to run this command in the background.",
+              "type": "boolean"
+            },
+            "dangerouslyDisableSandbox": {
+              "description": "Set this to true to dangerously override sandbox mode and run commands without sandboxing.",
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "command"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "CronCreate",
+        "description": "Schedule a prompt to be enqueued at a future time.... <Truncated in logs> ...obs.\n\nReturns a job ID you can pass to CronDelete.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "cron": {
+              "description": "Standard 5-field cron expression in local time: \"M... <Truncated in logs> ...es, \"30 14 28 2 *\" = Feb 28 at 2:30pm local once).",
+              "type": "string"
+            },
+            "prompt": {
+              "description": "The prompt to enqueue at each fire time.",
+              "type": "string"
+            },
+            "recurring": {
+              "description": "true (default) = fire on every cron match until de... <Truncated in logs> ...e-shot requests with pinned minute/hour/dom/month.",
+              "type": "boolean"
+            },
+            "durable": {
+              "description": "true = persist to .claude/scheduled_tasks.json and... <Truncated in logs> ...the user asks the task to survive across sessions.",
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "cron",
+            "prompt"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "CronDelete",
+        "description": "Cancel a cron job previously scheduled with CronCr... <Truncated in logs> ...r the in-memory session store (session-only jobs).",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "id": {
+              "description": "Job ID returned by CronCreate.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "id"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "CronList",
+        "description": "List all cron jobs scheduled via CronCreate, both durable (.claude/scheduled_tasks.json) and session-only.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {},
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "Edit",
+        "description": "Performs exact string replacement in a file.\n\n- Yo... <Truncated in logs> ...lace_all: true` replaces every occurrence instead.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "file_path": {
+              "description": "The absolute path to the file to modify",
+              "type": "string"
+            },
+            "old_string": {
+              "description": "The text to replace",
+              "type": "string"
+            },
+            "new_string": {
+              "description": "The text to replace it with (must be different from old_string)",
+              "type": "string"
+            },
+            "replace_all": {
+              "description": "Replace all occurrences of old_string (default false)",
+              "default": false,
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "file_path",
+            "old_string",
+            "new_string"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "EnterWorktree",
+        "description": "Use this tool ONLY when explicitly instructed to w... <Truncated in logs> ...nested inside it. Mutually exclusive with `name`.\n",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "name": {
+              "description": "Optional name for a new worktree. Each \"/\"-separat... <Truncated in logs> ...d if not provided. Mutually exclusive with `path`.",
+              "type": "string"
+            },
+            "path": {
+              "description": "Path to an existing worktree to switch into instea... <Truncated in logs> ...i-repo workspace). Mutually exclusive with `name`.",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "ExitWorktree",
+        "description": "Exit a worktree session created by EnterWorktree a... <Truncated in logs> ...ee can be called again to create a fresh worktree\n",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "action": {
+              "description": "\"keep\" leaves the worktree and branch on disk; \"remove\" deletes both.",
+              "type": "string",
+              "enum": [
+                "keep",
+                "remove"
+              ]
+            },
+            "discard_changes": {
+              "description": "Required true when action is \"remove\" and the work... <Truncated in logs> ...its. The tool will refuse and list them otherwise.",
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "action"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "ListAgents",
+        "description": "Lists agents you can SendMessage to — in-process s... <Truncated in logs> ...ws share it, or an error asks you to disambiguate.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "channel": {
+              "description": "Not available in this build; leave unset.",
+              "type": "string",
+              "maxLength": 256
+            },
+            "q": {
+              "description": "Not available in this build; leave unset.",
+              "type": "string",
+              "maxLength": 256
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "LSP",
+        "description": "Interact with Language Server Protocol (LSP) serve... <Truncated in logs> ...no server is available, an error will be returned.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "operation": {
+              "description": "The LSP operation to perform",
+              "type": "string",
+              "enum": [
+                "goToDefinition",
+                "findReferences",
+                "hover",
+                "documentSymbol",
+                "workspaceSymbol",
+                "goToImplementation",
+                "prepareCallHierarchy",
+                "incomingCalls",
+                "outgoingCalls"
+              ]
+            },
+            "filePath": {
+              "description": "The absolute or relative path to the file",
+              "type": "string"
+            },
+            "line": {
+              "description": "The line number (1-based, as shown in editors)",
+              "type": "integer",
+              "exclusiveMinimum": 0,
+              "maximum": 9007199254740991
+            },
+            "character": {
+              "description": "The character offset (1-based, as shown in editors)",
+              "type": "integer",
+              "exclusiveMinimum": 0,
+              "maximum": 9007199254740991
+            },
+            "query": {
+              "description": "The symbol name or partial name to search for (wor... <Truncated in logs> ..., so always provide it when using workspaceSymbol.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "operation",
+            "filePath",
+            "line",
+            "character"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "NotebookEdit",
+        "description": "Replaces, inserts, or deletes a single cell in a J... <Truncated in logs> ...d when inserting. Use `delete` to remove the cell.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "notebook_path": {
+              "description": "The absolute path to the Jupyter notebook file to edit (must be absolute, not relative)",
+              "type": "string"
+            },
+            "cell_id": {
+              "description": "The ID of the cell to edit. When inserting a new c... <Truncated in logs> ...ith this ID, or at the beginning if not specified.",
+              "type": "string"
+            },
+            "new_source": {
+              "description": "The new source for the cell",
+              "type": "string"
+            },
+            "cell_type": {
+              "description": "The type of the cell (code or markdown). If not sp... <Truncated in logs> ...type. If using edit_mode=insert, this is required.",
+              "type": "string",
+              "enum": [
+                "code",
+                "markdown"
+              ]
+            },
+            "edit_mode": {
+              "description": "The type of edit to make (replace, insert, delete). Defaults to replace.",
+              "type": "string",
+              "enum": [
+                "replace",
+                "insert",
+                "delete"
+              ]
+            }
+          },
+          "required": [
+            "notebook_path",
+            "new_source"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "Read",
+        "description": "Reads a file from the local filesystem.\n\n- `file_p... <Truncated in logs> ...failed, and the harness tracks file state for you.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "file_path": {
+              "description": "The absolute path to the file to read",
+              "type": "string"
+            },
+            "offset": {
+              "description": "The line number to start reading from. Only provide if the file is too large to read at once",
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "limit": {
+              "description": "The number of lines to read. Only provide if the file is too large to read at once.",
+              "type": "integer",
+              "exclusiveMinimum": 0,
+              "maximum": 9007199254740991
+            },
+            "pages": {
+              "description": "Page range for PDF files (e.g., \"1-5\", \"3\", \"10-20\"). Only applicable to PDF files. Maximum 20 pages per request.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "file_path"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "ReportFindings",
+        "description": "Report code-review findings as a typed list so the... <Truncated in logs> ...utcome` on each finding to what actually happened.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "level": {
+              "description": "Effort level the review ran at",
+              "type": "string",
+              "enum": [
+                "low",
+                "medium",
+                "high",
+                "xhigh",
+                "max"
+              ]
+            },
+            "findings": {
+              "description": "Verified findings, most-severe first; empty if none survived",
+              "maxItems": 32,
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "description": "Repo-relative path of the file the finding is in",
+                    "type": "string"
+                  },
+                  "line": {
+                    "description": "1-indexed line the finding anchors to",
+                    "type": "integer",
+                    "minimum": -9007199254740991,
+                    "maximum": 9007199254740991
+                  },
+                  "summary": {
+                    "description": "One-sentence statement of the defect",
+                    "type": "string"
+                  },
+                  "short_summary": {
+                    "description": "Compressed label for compact UI (≤60 chars): the claim alone, no rationale or consequence clause",
+                    "type": "string",
+                    "maxLength": 60
+                  },
+                  "failure_scenario": {
+                    "description": "Concrete inputs/state → wrong output/crash",
+                    "type": "string"
+                  },
+                  "category": {
+                    "description": "Short kebab-case slug of the finding type, e.g. \"correctness\", \"simplification\", \"efficiency\", \"test-coverage\"",
+                    "type": "string",
+                    "maxLength": 40
+                  },
+                  "verdict": {
+                    "description": "Set when a verify pass ran; absent on inline-only reviews",
+                    "type": "string",
+                    "enum": [
+                      "CONFIRMED",
+                      "PLAUSIBLE"
+                    ]
+                  },
+                  "outcome": {
+                    "description": "Set ONLY when re-reporting after applying fixes: what happened to this finding",
+                    "type": "string",
+                    "enum": [
+                      "fixed",
+                      "skipped",
+                      "no_change_needed"
+                    ]
+                  }
+                },
+                "required": [
+                  "file",
+                  "summary",
+                  "failure_scenario"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "findings"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "ScheduleWakeup",
+        "description": "Schedule when to resume work in /loop dynamic mode... <Truncated in logs> ...edict your cadence in advance — make it specific.\n",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "delaySeconds": {
+              "description": "Seconds from now to wake up. Clamped to [60, 3600] by the runtime. Required unless `stop` is true.",
+              "type": "number"
+            },
+            "reason": {
+              "description": "One short sentence explaining the chosen delay. Go... <Truncated in logs> ...user. Be specific. Required unless `stop` is true.",
+              "type": "string"
+            },
+            "prompt": {
+              "description": "The /loop input to fire on wake-up. Pass the same ... <Truncated in logs> ...tonomous-loop>>`). Required unless `stop` is true.",
+              "type": "string"
+            },
+            "stop": {
+              "description": "Set to true to end the dynamic loop immediately in... <Truncated in logs> ...er fields are ignored and no further wakeups fire.",
+              "type": "boolean"
+            },
+            "noop": {
+              "description": "true = nothing changed (you checked and there is n... <Truncated in logs> ...acked as a streak. Required unless `stop` is true.",
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "SendMessage",
+        "description": "# SendMessage\n\nSend a message to another agent.\n\n`... <Truncated in logs> ...ng). Route blocked work back to your user instead.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "to": {
+              "description": "Recipient: a name from ListAgents (append its \" [r... <Truncated in logs> ...mate name, \"main\", or a background agent's agentId",
+              "type": "string",
+              "allOf": [
+                {
+                  "pattern": "^[^\\n\\r]*$"
+                },
+                {
+                  "pattern": "^[\\s\\S]{0,300}$"
+                }
+              ]
+            },
+            "summary": {
+              "description": "A 5-10 word label for your own transcript row (not... <Truncated in logs> ... Truncated to 200 characters rather than rejected.",
+              "type": "string",
+              "maxLength": 200
+            },
+            "message": {
+              "default": "",
+              "description": "Plain text message content. The recipient's human ... <Truncated in logs> ...out — not a greeting, preamble, or bare @-mention.",
+              "type": "string"
+            },
+            "notify_when_idle": {
+              "description": "Ask a session ON THIS MACHINE to send you ONE noti... <Truncated in logs> ...subscription that costs the other session nothing.",
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "to",
+            "message"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "Skill",
+        "description": "Invoke a skill.\n\nA skill is a packaged set of inst... <Truncated in logs> ...d — follow it directly rather than calling again.\n",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "skill": {
+              "description": "The name of a skill from the available-skills list. Do not guess names.",
+              "type": "string"
+            },
+            "args": {
+              "description": "Optional arguments for the skill",
+              "type": "string"
+            }
+          },
+          "required": [
+            "skill"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "TaskStop",
+        "description": "\n- Stops a running background task by its ID\n- Tak... <Truncated in logs> ...ol when you need to terminate a long-running task\n",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "task_id": {
+              "description": "The ID of the background task to stop. Agent-team ... <Truncated in logs> ...ound agents are also accepted by agent ID or name.",
+              "type": "string"
+            },
+            "shell_id": {
+              "description": "Deprecated: use task_id instead",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "WebFetch",
+        "description": "Fetches a URL, converts the page to markdown, and ... <Truncated in logs> ...RL.\n- Responses are cached for 15 minutes per URL.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "url": {
+              "description": "The URL to fetch content from",
+              "type": "string",
+              "format": "uri"
+            },
+            "prompt": {
+              "description": "The prompt to run on the fetched content",
+              "type": "string"
+            }
+          },
+          "required": [
+            "url",
+            "prompt"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "WebSearch",
+        "description": "Search the web. Returns result blocks with titles ... <Truncated in logs> ...ces:\" list of the URLs you used as markdown links.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "query": {
+              "description": "The search query to use",
+              "type": "string",
+              "minLength": 2
+            },
+            "allowed_domains": {
+              "description": "Only include search results from these domains",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "blocked_domains": {
+              "description": "Never include search results from these domains",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "query"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "Workflow",
+        "description": "Execute a workflow script that orchestrates multip... <Truncated in logs> ...remove it with \"Dynamic workflow size\" in /config.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "script": {
+              "description": "Self-contained workflow script. Must begin with `e... <Truncated in logs> ... body using agent()/parallel()/pipeline()/phase().",
+              "type": "string",
+              "maxLength": 524288
+            },
+            "name": {
+              "description": "Name of a predefined workflow (built-in or from .claude/workflows/). Resolves to a self-contained script.",
+              "type": "string"
+            },
+            "description": {
+              "description": "Ignored — set the workflow description in the script's `meta` block.",
+              "type": "string"
+            },
+            "title": {
+              "description": "Ignored — set the workflow title in the script's `meta` block.",
+              "type": "string"
+            },
+            "args": {
+              "description": "Optional input value exposed to the script as the ... <Truncated in logs> ...erized named workflows (e.g. a research question)."
+            },
+            "scriptPath": {
+              "description": "Path to a workflow script file on disk. Every Work... <Truncated in logs> ...script. Takes precedence over `script` and `name`.",
+              "type": "string"
+            },
+            "resumeFromRunId": {
+              "description": "Run ID of a prior Workflow invocation to resume fr... <Truncated in logs> ...op the prior run first (TaskStop) before resuming.",
+              "type": "string",
+              "pattern": "^wf_[a-z0-9-]{6,}$"
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "Write",
+        "description": "Writes a file to the local filesystem, overwriting... <Truncated in logs> ... will fail. For partial changes, use Edit instead.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "file_path": {
+              "description": "The absolute path to the file to write (must be absolute, not relative)",
+              "type": "string"
+            },
+            "content": {
+              "description": "The content to write to the file",
+              "type": "string"
+            }
+          },
+          "required": [
+            "file_path",
+            "content"
+          ],
+          "additionalProperties": false
+        }
+      }
+    }
+  ],
+  "stream_options": {
+    "include_usage": true
+  }
+}
+[2026-09-27 10:34:23][WARN][qwen-local] Reasoning setting 'xhigh' is not supported by model 'incoai/Qwen3.8-27B-Splash'. Supported settings: 'on', 'off'. Falling back to reasoning setting 'on'.
+[2026-09-27 10:34:23][INFO][qwen-local] Running chat completion on conversation with 20 messages.
+[2026-09-27 10:34:23][INFO][qwen-local] Streaming response...
+[2026-09-27 10:34:24][INFO][qwen-local] Prompt processing progress: 0.0%
+[2026-09-27 10:34:25][INFO][qwen-local] Prompt processing progress: 92.0%
+[2026-09-27 10:34:25][INFO][qwen-local] Prompt processing progress: 100.0%
+[2026-09-27 10:34:26][DEBUG] 10:34:26 Done · input 154,222 · cached 154,048 · output 60 · tools 21·d421ffe0 · TTFT 1.3s · 38.2 tok/s
+[2026-09-27 10:34:26][INFO][qwen-local] Finished streaming response
+[2026-09-27 10:34:26][DEBUG] Received request: POST to /v1/chat/completions with body {
+  "model": "qwen-local",
+  "messages": [
+    {
+      "role": "system",
+      "content": "x-anthropic-billing-header: cc_version=2.1.283.efe... <Truncated in logs> ...e alone if the answer may be further in the file.]"
+    },
+    {
+      "role": "user",
+      "content": "<system-reminder>\nAs you answer the user's questio... <Truncated in logs> ...he Kestrel Basin? Reply with just the designation."
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_4d674eae09e46aba05482ece63b84860_0",
+          "type": "function",
+          "function": {
+            "name": "Read",
+            "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file1.md\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_4d674eae09e46aba05482ece63b84860_0",
+      "content": "1\t# Ferrovial Survey of the Kestrel Basin\n2\t# Docu... <Truncated in logs> ...d entry 16223. Cross-reference volume 1, annex C2."
+    },
+    {
+      "role": "assistant",
+      "content": "\n\nThe first read was truncated at line 593 — continuing from there.\n\n",
+      "tool_calls": [
+        {
+          "id": "call_4126b61c648e451e98d6441cd6c924ee_0",
+          "type": "function",
+          "function": {
+            "name": "Read",
+            "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file1.md\",\"offset\":594}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_4126b61c648e451e98d6441cd6c924ee_0",
+      "content": "594\t- borehole 9717 / stratum 16: reading 44.32 at... <Truncated in logs> ...rovial Survey of the Kestrel Basin, volume 1.\n996\t"
+    },
+    {
+      "role": "assistant",
+      "content": "\n\nTANGERINE-LYNX"
+    },
+    {
+      "role": "user",
+      "content": "Read the file stress-corpus/file2.md completely — ... <Truncated in logs> ...Husbandry Manual? Reply with just the designation."
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_79aa57f38cc49b718632f10415eb14d2_0",
+          "type": "function",
+          "function": {
+            "name": "Read",
+            "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file2.md\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_79aa57f38cc49b718632f10415eb14d2_0",
+      "content": "1\t# Meridian Aviary Husbandry Manual\n2\t# Document ... <Truncated in logs> ...d entry 35564. Cross-reference volume 2, annex D7."
+    },
+    {
+      "role": "assistant",
+      "content": "\n\nContinuing with the rest of the file.\n\n",
+      "tool_calls": [
+        {
+          "id": "call_f6093421f1263b89dff55bb8405fa168_0",
+          "type": "function",
+          "function": {
+            "name": "Read",
+            "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file2.md\",\"offset\":592}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_f6093421f1263b89dff55bb8405fa168_0",
+      "content": "592\t- enclosure 6493 / flock 45: reading 47.67 at ... <Truncated in logs> ...f Meridian Aviary Husbandry Manual, volume 2.\n995\t"
+    },
+    {
+      "role": "assistant",
+      "content": "\n\nI've read the entire file (995 lines).\n\nThere is... <Truncated in logs> ...he question doesn't match the document's contents."
+    },
+    {
+      "role": "user",
+      "content": "Read the file stress-corpus/file3.md completely — ... <Truncated in logs> ...intenance Ledger? Reply with just the designation."
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_3ef4309b53ab97674231569fac329b9f_0",
+          "type": "function",
+          "function": {
+            "name": "Read",
+            "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file3.md\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_3ef4309b53ab97674231569fac329b9f_0",
+      "content": "1\t# Talgarth Textile Mill Maintenance Ledger\n2\t# D... <Truncated in logs> ... entry 16599. Cross-reference volume 3, annex G14."
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_bfc6bfc0379fe175b27e269cac3fcb2a_0",
+          "type": "function",
+          "function": {
+            "name": "Read",
+            "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file3.md\",\"offset\":591}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_bfc6bfc0379fe175b27e269cac3fcb2a_0",
+      "content": "591\t\n592\t## Section 3.51 — loom bank group 199, sh... <Truncated in logs> ...th Textile Mill Maintenance Ledger, volume 3.\n988\t"
+    },
+    {
+      "role": "assistant",
+      "content": "\n\nI've read the entire file (988 lines).\n\nNo desig... <Truncated in logs> ...he question doesn't match the document's contents."
+    },
+    {
+      "role": "user",
+      "content": "Read the file stress-corpus/file4.md completely — ... <Truncated in logs> ...on Plant Runbook? Reply with just the designation."
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_a62399387b6b7c85d9c95f33c888f7e2_0",
+          "type": "function",
+          "function": {
+            "name": "Read",
+            "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file4.md\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_a62399387b6b7c85d9c95f33c888f7e2_0",
+      "content": "1\t# Coastal Desalination Plant Runbook\n2\t# Documen... <Truncated in logs> ...d entry 89616. Cross-reference volume 4, annex E3."
+    }
+  ],
+  "stream": true,
+  "max_tokens": 32000,
+  "reasoning_effort": "xhigh",
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "Agent",
+        "description": "Launch a new agent to handle complex, multi-step t... <Truncated in logs> ...er asks before it arrives, say it's still running.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "description": {
+              "description": "A short (3-5 word) description of the task",
+              "type": "string"
+            },
+            "prompt": {
+              "description": "The task for the agent to perform",
+              "type": "string"
+            },
+            "subagent_type": {
+              "description": "The type of specialized agent to use for this task",
+              "type": "string"
+            },
+            "model": {
+              "description": "Optional model override for this agent. Takes prec... <Truncated in logs> ...e: \"fork\" — forks always inherit the parent model.",
+              "type": "string",
+              "enum": [
+                "sonnet",
+                "opus",
+                "haiku",
+                "fable"
+              ]
+            },
+            "run_in_background": {
+              "description": "Agents run in the background by default; you will ... <Truncated in logs> ...he background so the user can hand you other work.",
+              "type": "boolean"
+            },
+            "isolation": {
+              "description": "Isolation mode. \"worktree\" creates a temporary git... <Truncated in logs> ...always runs in background; availability is gated).",
+              "type": "string",
+              "enum": [
+                "worktree",
+                "remote"
+              ]
+            }
+          },
+          "required": [
+            "description",
+            "prompt"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "Bash",
+        "description": "Executes a bash command and returns its output.\n\n-... <Truncated in logs> ...nversation's system-reminder, when one is present.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "command": {
+              "description": "The command to execute",
+              "type": "string"
+            },
+            "timeout": {
+              "description": "Optional timeout in milliseconds (max 600000)",
+              "type": "number"
+            },
+            "description": {
+              "description": "Clear, concise description of what this command do... <Truncated in logs> ...tch JSON from URL and extract data array elements\"",
+              "type": "string"
+            },
+            "run_in_background": {
+              "description": "Set to true to run this command in the background.",
+              "type": "boolean"
+            },
+            "dangerouslyDisableSandbox": {
+              "description": "Set this to true to dangerously override sandbox mode and run commands without sandboxing.",
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "command"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "CronCreate",
+        "description": "Schedule a prompt to be enqueued at a future time.... <Truncated in logs> ...obs.\n\nReturns a job ID you can pass to CronDelete.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "cron": {
+              "description": "Standard 5-field cron expression in local time: \"M... <Truncated in logs> ...es, \"30 14 28 2 *\" = Feb 28 at 2:30pm local once).",
+              "type": "string"
+            },
+            "prompt": {
+              "description": "The prompt to enqueue at each fire time.",
+              "type": "string"
+            },
+            "recurring": {
+              "description": "true (default) = fire on every cron match until de... <Truncated in logs> ...e-shot requests with pinned minute/hour/dom/month.",
+              "type": "boolean"
+            },
+            "durable": {
+              "description": "true = persist to .claude/scheduled_tasks.json and... <Truncated in logs> ...the user asks the task to survive across sessions.",
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "cron",
+            "prompt"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "CronDelete",
+        "description": "Cancel a cron job previously scheduled with CronCr... <Truncated in logs> ...r the in-memory session store (session-only jobs).",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "id": {
+              "description": "Job ID returned by CronCreate.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "id"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "CronList",
+        "description": "List all cron jobs scheduled via CronCreate, both durable (.claude/scheduled_tasks.json) and session-only.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {},
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "Edit",
+        "description": "Performs exact string replacement in a file.\n\n- Yo... <Truncated in logs> ...lace_all: true` replaces every occurrence instead.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "file_path": {
+              "description": "The absolute path to the file to modify",
+              "type": "string"
+            },
+            "old_string": {
+              "description": "The text to replace",
+              "type": "string"
+            },
+            "new_string": {
+              "description": "The text to replace it with (must be different from old_string)",
+              "type": "string"
+            },
+            "replace_all": {
+              "description": "Replace all occurrences of old_string (default false)",
+              "default": false,
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "file_path",
+            "old_string",
+            "new_string"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "EnterWorktree",
+        "description": "Use this tool ONLY when explicitly instructed to w... <Truncated in logs> ...nested inside it. Mutually exclusive with `name`.\n",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "name": {
+              "description": "Optional name for a new worktree. Each \"/\"-separat... <Truncated in logs> ...d if not provided. Mutually exclusive with `path`.",
+              "type": "string"
+            },
+            "path": {
+              "description": "Path to an existing worktree to switch into instea... <Truncated in logs> ...i-repo workspace). Mutually exclusive with `name`.",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "ExitWorktree",
+        "description": "Exit a worktree session created by EnterWorktree a... <Truncated in logs> ...ee can be called again to create a fresh worktree\n",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "action": {
+              "description": "\"keep\" leaves the worktree and branch on disk; \"remove\" deletes both.",
+              "type": "string",
+              "enum": [
+                "keep",
+                "remove"
+              ]
+            },
+            "discard_changes": {
+              "description": "Required true when action is \"remove\" and the work... <Truncated in logs> ...its. The tool will refuse and list them otherwise.",
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "action"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "ListAgents",
+        "description": "Lists agents you can SendMessage to — in-process s... <Truncated in logs> ...ws share it, or an error asks you to disambiguate.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "channel": {
+              "description": "Not available in this build; leave unset.",
+              "type": "string",
+              "maxLength": 256
+            },
+            "q": {
+              "description": "Not available in this build; leave unset.",
+              "type": "string",
+              "maxLength": 256
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "LSP",
+        "description": "Interact with Language Server Protocol (LSP) serve... <Truncated in logs> ...no server is available, an error will be returned.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "operation": {
+              "description": "The LSP operation to perform",
+              "type": "string",
+              "enum": [
+                "goToDefinition",
+                "findReferences",
+                "hover",
+                "documentSymbol",
+                "workspaceSymbol",
+                "goToImplementation",
+                "prepareCallHierarchy",
+                "incomingCalls",
+                "outgoingCalls"
+              ]
+            },
+            "filePath": {
+              "description": "The absolute or relative path to the file",
+              "type": "string"
+            },
+            "line": {
+              "description": "The line number (1-based, as shown in editors)",
+              "type": "integer",
+              "exclusiveMinimum": 0,
+              "maximum": 9007199254740991
+            },
+            "character": {
+              "description": "The character offset (1-based, as shown in editors)",
+              "type": "integer",
+              "exclusiveMinimum": 0,
+              "maximum": 9007199254740991
+            },
+            "query": {
+              "description": "The symbol name or partial name to search for (wor... <Truncated in logs> ..., so always provide it when using workspaceSymbol.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "operation",
+            "filePath",
+            "line",
+            "character"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "NotebookEdit",
+        "description": "Replaces, inserts, or deletes a single cell in a J... <Truncated in logs> ...d when inserting. Use `delete` to remove the cell.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "notebook_path": {
+              "description": "The absolute path to the Jupyter notebook file to edit (must be absolute, not relative)",
+              "type": "string"
+            },
+            "cell_id": {
+              "description": "The ID of the cell to edit. When inserting a new c... <Truncated in logs> ...ith this ID, or at the beginning if not specified.",
+              "type": "string"
+            },
+            "new_source": {
+              "description": "The new source for the cell",
+              "type": "string"
+            },
+            "cell_type": {
+              "description": "The type of the cell (code or markdown). If not sp... <Truncated in logs> ...type. If using edit_mode=insert, this is required.",
+              "type": "string",
+              "enum": [
+                "code",
+                "markdown"
+              ]
+            },
+            "edit_mode": {
+              "description": "The type of edit to make (replace, insert, delete). Defaults to replace.",
+              "type": "string",
+              "enum": [
+                "replace",
+                "insert",
+                "delete"
+              ]
+            }
+          },
+          "required": [
+            "notebook_path",
+            "new_source"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "Read",
+        "description": "Reads a file from the local filesystem.\n\n- `file_p... <Truncated in logs> ...failed, and the harness tracks file state for you.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "file_path": {
+              "description": "The absolute path to the file to read",
+              "type": "string"
+            },
+            "offset": {
+              "description": "The line number to start reading from. Only provide if the file is too large to read at once",
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "limit": {
+              "description": "The number of lines to read. Only provide if the file is too large to read at once.",
+              "type": "integer",
+              "exclusiveMinimum": 0,
+              "maximum": 9007199254740991
+            },
+            "pages": {
+              "description": "Page range for PDF files (e.g., \"1-5\", \"3\", \"10-20\"). Only applicable to PDF files. Maximum 20 pages per request.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "file_path"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "ReportFindings",
+        "description": "Report code-review findings as a typed list so the... <Truncated in logs> ...utcome` on each finding to what actually happened.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "level": {
+              "description": "Effort level the review ran at",
+              "type": "string",
+              "enum": [
+                "low",
+                "medium",
+                "high",
+                "xhigh",
+                "max"
+              ]
+            },
+            "findings": {
+              "description": "Verified findings, most-severe first; empty if none survived",
+              "maxItems": 32,
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "description": "Repo-relative path of the file the finding is in",
+                    "type": "string"
+                  },
+                  "line": {
+                    "description": "1-indexed line the finding anchors to",
+                    "type": "integer",
+                    "minimum": -9007199254740991,
+                    "maximum": 9007199254740991
+                  },
+                  "summary": {
+                    "description": "One-sentence statement of the defect",
+                    "type": "string"
+                  },
+                  "short_summary": {
+                    "description": "Compressed label for compact UI (≤60 chars): the claim alone, no rationale or consequence clause",
+                    "type": "string",
+                    "maxLength": 60
+                  },
+                  "failure_scenario": {
+                    "description": "Concrete inputs/state → wrong output/crash",
+                    "type": "string"
+                  },
+                  "category": {
+                    "description": "Short kebab-case slug of the finding type, e.g. \"correctness\", \"simplification\", \"efficiency\", \"test-coverage\"",
+                    "type": "string",
+                    "maxLength": 40
+                  },
+                  "verdict": {
+                    "description": "Set when a verify pass ran; absent on inline-only reviews",
+                    "type": "string",
+                    "enum": [
+                      "CONFIRMED",
+                      "PLAUSIBLE"
+                    ]
+                  },
+                  "outcome": {
+                    "description": "Set ONLY when re-reporting after applying fixes: what happened to this finding",
+                    "type": "string",
+                    "enum": [
+                      "fixed",
+                      "skipped",
+                      "no_change_needed"
+                    ]
+                  }
+                },
+                "required": [
+                  "file",
+                  "summary",
+                  "failure_scenario"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "findings"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "ScheduleWakeup",
+        "description": "Schedule when to resume work in /loop dynamic mode... <Truncated in logs> ...edict your cadence in advance — make it specific.\n",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "delaySeconds": {
+              "description": "Seconds from now to wake up. Clamped to [60, 3600] by the runtime. Required unless `stop` is true.",
+              "type": "number"
+            },
+            "reason": {
+              "description": "One short sentence explaining the chosen delay. Go... <Truncated in logs> ...user. Be specific. Required unless `stop` is true.",
+              "type": "string"
+            },
+            "prompt": {
+              "description": "The /loop input to fire on wake-up. Pass the same ... <Truncated in logs> ...tonomous-loop>>`). Required unless `stop` is true.",
+              "type": "string"
+            },
+            "stop": {
+              "description": "Set to true to end the dynamic loop immediately in... <Truncated in logs> ...er fields are ignored and no further wakeups fire.",
+              "type": "boolean"
+            },
+            "noop": {
+              "description": "true = nothing changed (you checked and there is n... <Truncated in logs> ...acked as a streak. Required unless `stop` is true.",
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "SendMessage",
+        "description": "# SendMessage\n\nSend a message to another agent.\n\n`... <Truncated in logs> ...ng). Route blocked work back to your user instead.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "to": {
+              "description": "Recipient: a name from ListAgents (append its \" [r... <Truncated in logs> ...mate name, \"main\", or a background agent's agentId",
+              "type": "string",
+              "allOf": [
+                {
+                  "pattern": "^[^\\n\\r]*$"
+                },
+                {
+                  "pattern": "^[\\s\\S]{0,300}$"
+                }
+              ]
+            },
+            "summary": {
+              "description": "A 5-10 word label for your own transcript row (not... <Truncated in logs> ... Truncated to 200 characters rather than rejected.",
+              "type": "string",
+              "maxLength": 200
+            },
+            "message": {
+              "default": "",
+              "description": "Plain text message content. The recipient's human ... <Truncated in logs> ...out — not a greeting, preamble, or bare @-mention.",
+              "type": "string"
+            },
+            "notify_when_idle": {
+              "description": "Ask a session ON THIS MACHINE to send you ONE noti... <Truncated in logs> ...subscription that costs the other session nothing.",
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "to",
+            "message"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "Skill",
+        "description": "Invoke a skill.\n\nA skill is a packaged set of inst... <Truncated in logs> ...d — follow it directly rather than calling again.\n",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "skill": {
+              "description": "The name of a skill from the available-skills list. Do not guess names.",
+              "type": "string"
+            },
+            "args": {
+              "description": "Optional arguments for the skill",
+              "type": "string"
+            }
+          },
+          "required": [
+            "skill"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "TaskStop",
+        "description": "\n- Stops a running background task by its ID\n- Tak... <Truncated in logs> ...ol when you need to terminate a long-running task\n",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "task_id": {
+              "description": "The ID of the background task to stop. Agent-team ... <Truncated in logs> ...ound agents are also accepted by agent ID or name.",
+              "type": "string"
+            },
+            "shell_id": {
+              "description": "Deprecated: use task_id instead",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "WebFetch",
+        "description": "Fetches a URL, converts the page to markdown, and ... <Truncated in logs> ...RL.\n- Responses are cached for 15 minutes per URL.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "url": {
+              "description": "The URL to fetch content from",
+              "type": "string",
+              "format": "uri"
+            },
+            "prompt": {
+              "description": "The prompt to run on the fetched content",
+              "type": "string"
+            }
+          },
+          "required": [
+            "url",
+            "prompt"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "WebSearch",
+        "description": "Search the web. Returns result blocks with titles ... <Truncated in logs> ...ces:\" list of the URLs you used as markdown links.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "query": {
+              "description": "The search query to use",
+              "type": "string",
+              "minLength": 2
+            },
+            "allowed_domains": {
+              "description": "Only include search results from these domains",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "blocked_domains": {
+              "description": "Never include search results from these domains",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "query"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "Workflow",
+        "description": "Execute a workflow script that orchestrates multip... <Truncated in logs> ...remove it with \"Dynamic workflow size\" in /config.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "script": {
+              "description": "Self-contained workflow script. Must begin with `e... <Truncated in logs> ... body using agent()/parallel()/pipeline()/phase().",
+              "type": "string",
+              "maxLength": 524288
+            },
+            "name": {
+              "description": "Name of a predefined workflow (built-in or from .claude/workflows/). Resolves to a self-contained script.",
+              "type": "string"
+            },
+            "description": {
+              "description": "Ignored — set the workflow description in the script's `meta` block.",
+              "type": "string"
+            },
+            "title": {
+              "description": "Ignored — set the workflow title in the script's `meta` block.",
+              "type": "string"
+            },
+            "args": {
+              "description": "Optional input value exposed to the script as the ... <Truncated in logs> ...erized named workflows (e.g. a research question)."
+            },
+            "scriptPath": {
+              "description": "Path to a workflow script file on disk. Every Work... <Truncated in logs> ...script. Takes precedence over `script` and `name`.",
+              "type": "string"
+            },
+            "resumeFromRunId": {
+              "description": "Run ID of a prior Workflow invocation to resume fr... <Truncated in logs> ...op the prior run first (TaskStop) before resuming.",
+              "type": "string",
+              "pattern": "^wf_[a-z0-9-]{6,}$"
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "Write",
+        "description": "Writes a file to the local filesystem, overwriting... <Truncated in logs> ... will fail. For partial changes, use Edit instead.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "file_path": {
+              "description": "The absolute path to the file to write (must be absolute, not relative)",
+              "type": "string"
+            },
+            "content": {
+              "description": "The content to write to the file",
+              "type": "string"
+            }
+          },
+          "required": [
+            "file_path",
+            "content"
+          ],
+          "additionalProperties": false
+        }
+      }
+    }
+  ],
+  "stream_options": {
+    "include_usage": true
+  }
+}
+[2026-09-27 10:34:26][WARN][qwen-local] Reasoning setting 'xhigh' is not supported by model 'incoai/Qwen3.8-27B-Splash'. Supported settings: 'on', 'off'. Falling back to reasoning setting 'on'.
+[2026-09-27 10:34:26][INFO][qwen-local] Running chat completion on conversation with 22 messages.
+[2026-09-27 10:34:26][INFO][qwen-local] Streaming response...
+[2026-09-27 10:34:27][INFO][qwen-local] Prompt processing progress: 0.0%
+[2026-09-27 10:34:27][INFO][qwen-local] Prompt processing progress: 0.1%
+[2026-09-27 10:34:28][INFO][qwen-local] Prompt processing progress: 0.3%
+[2026-09-27 10:34:32][INFO][qwen-local] Prompt processing progress: 1.6%
+[2026-09-27 10:34:37][INFO][qwen-local] Prompt processing progress: 2.8%
+[2026-09-27 10:34:42][INFO][qwen-local] Prompt processing progress: 4.0%
+[2026-09-27 10:34:47][INFO][qwen-local] Prompt processing progress: 5.3%
+[2026-09-27 10:34:53][INFO][qwen-local] Prompt processing progress: 6.5%
+[2026-09-27 10:34:58][INFO][qwen-local] Prompt processing progress: 7.8%
+[2026-09-27 10:35:03][INFO][qwen-local] Prompt processing progress: 9.0%
+[2026-09-27 10:35:09][INFO][qwen-local] Prompt processing progress: 10.3%
+[2026-09-27 10:35:14][INFO][qwen-local] Prompt processing progress: 11.5%
+[2026-09-27 10:35:20][INFO][qwen-local] Prompt processing progress: 12.7%
+[2026-09-27 10:35:25][INFO][qwen-local] Prompt processing progress: 14.0%
+[2026-09-27 10:35:31][INFO][qwen-local] Prompt processing progress: 15.2%
+[2026-09-27 10:35:37][INFO][qwen-local] Prompt processing progress: 16.5%
+[2026-09-27 10:35:43][INFO][qwen-local] Prompt processing progress: 17.7%
+[2026-09-27 10:35:49][INFO][qwen-local] Prompt processing progress: 19.0%
+[2026-09-27 10:35:55][INFO][qwen-local] Prompt processing progress: 20.2%
+[2026-09-27 10:36:01][INFO][qwen-local] Prompt processing progress: 21.5%
+[2026-09-27 10:36:08][INFO][qwen-local] Prompt processing progress: 22.7%
+[2026-09-27 10:36:14][INFO][qwen-local] Prompt processing progress: 23.9%
+[2026-09-27 10:36:20][INFO][qwen-local] Prompt processing progress: 25.2%
+[2026-09-27 10:36:27][INFO][qwen-local] Prompt processing progress: 26.4%
+[2026-09-27 10:36:34][INFO][qwen-local] Prompt processing progress: 27.7%
+[2026-09-27 10:36:41][INFO][qwen-local] Prompt processing progress: 28.9%
+[2026-09-27 10:36:48][INFO][qwen-local] Prompt processing progress: 30.2%
+[2026-09-27 10:36:55][INFO][qwen-local] Prompt processing progress: 31.4%
+[2026-09-27 10:37:02][INFO][qwen-local] Prompt processing progress: 32.7%
+[2026-09-27 10:37:09][INFO][qwen-local] Prompt processing progress: 33.9%
+[2026-09-27 10:37:17][INFO][qwen-local] Prompt processing progress: 35.1%
+[2026-09-27 10:37:24][INFO][qwen-local] Prompt processing progress: 36.4%
+[2026-09-27 10:37:31][INFO][qwen-local] Prompt processing progress: 37.6%
+[2026-09-27 10:37:39][INFO][qwen-local] Prompt processing progress: 38.9%
+[2026-09-27 10:37:46][INFO][qwen-local] Prompt processing progress: 40.1%
+[2026-09-27 10:37:54][INFO][qwen-local] Prompt processing progress: 41.4%
+[2026-09-27 10:38:02][INFO][qwen-local] Prompt processing progress: 42.6%
+[2026-09-27 10:38:10][INFO][qwen-local] Prompt processing progress: 43.8%
+[2026-09-27 10:38:18][INFO][qwen-local] Prompt processing progress: 45.1%
+[2026-09-27 10:38:26][INFO][qwen-local] Prompt processing progress: 46.3%
+[2026-09-27 10:38:34][INFO][qwen-local] Prompt processing progress: 47.6%
+[2026-09-27 10:38:42][INFO][qwen-local] Prompt processing progress: 48.8%
+[2026-09-27 10:38:51][INFO][qwen-local] Prompt processing progress: 50.1%
+[2026-09-27 10:38:59][INFO][qwen-local] Prompt processing progress: 51.3%
+[2026-09-27 10:39:08][INFO][qwen-local] Prompt processing progress: 52.6%
+[2026-09-27 10:39:17][INFO][qwen-local] Prompt processing progress: 53.8%
+[2026-09-27 10:39:26][INFO][qwen-local] Prompt processing progress: 55.0%
+[2026-09-27 10:39:27][INFO][LM STUDIO SERVER] Client disconnected. Stopping generation... (If the model is busy processing the prompt, it will finish first.)
+[2026-09-27 10:39:27][INFO][qwen-local] Finished streaming response
+[2026-09-27 10:39:27][DEBUG] Received request: POST to /v1/chat/completions with body {
+  "model": "qwen-local",
+  "messages": [
+    {
+      "role": "system",
+      "content": "x-anthropic-billing-header: cc_version=2.1.283.efe... <Truncated in logs> ...e alone if the answer may be further in the file.]"
+    },
+    {
+      "role": "user",
+      "content": "<system-reminder>\nAs you answer the user's questio... <Truncated in logs> ...he Kestrel Basin? Reply with just the designation."
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_4d674eae09e46aba05482ece63b84860_0",
+          "type": "function",
+          "function": {
+            "name": "Read",
+            "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file1.md\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_4d674eae09e46aba05482ece63b84860_0",
+      "content": "1\t# Ferrovial Survey of the Kestrel Basin\n2\t# Docu... <Truncated in logs> ...d entry 16223. Cross-reference volume 1, annex C2."
+    },
+    {
+      "role": "assistant",
+      "content": "\n\nThe first read was truncated at line 593 — continuing from there.\n\n",
+      "tool_calls": [
+        {
+          "id": "call_4126b61c648e451e98d6441cd6c924ee_0",
+          "type": "function",
+          "function": {
+            "name": "Read",
+            "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file1.md\",\"offset\":594}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_4126b61c648e451e98d6441cd6c924ee_0",
+      "content": "594\t- borehole 9717 / stratum 16: reading 44.32 at... <Truncated in logs> ...rovial Survey of the Kestrel Basin, volume 1.\n996\t"
+    },
+    {
+      "role": "assistant",
+      "content": "\n\nTANGERINE-LYNX"
+    },
+    {
+      "role": "user",
+      "content": "Read the file stress-corpus/file2.md completely — ... <Truncated in logs> ...Husbandry Manual? Reply with just the designation."
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_79aa57f38cc49b718632f10415eb14d2_0",
+          "type": "function",
+          "function": {
+            "name": "Read",
+            "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file2.md\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_79aa57f38cc49b718632f10415eb14d2_0",
+      "content": "1\t# Meridian Aviary Husbandry Manual\n2\t# Document ... <Truncated in logs> ...d entry 35564. Cross-reference volume 2, annex D7."
+    },
+    {
+      "role": "assistant",
+      "content": "\n\nContinuing with the rest of the file.\n\n",
+      "tool_calls": [
+        {
+          "id": "call_f6093421f1263b89dff55bb8405fa168_0",
+          "type": "function",
+          "function": {
+            "name": "Read",
+            "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file2.md\",\"offset\":592}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_f6093421f1263b89dff55bb8405fa168_0",
+      "content": "592\t- enclosure 6493 / flock 45: reading 47.67 at ... <Truncated in logs> ...f Meridian Aviary Husbandry Manual, volume 2.\n995\t"
+    },
+    {
+      "role": "assistant",
+      "content": "\n\nI've read the entire file (995 lines).\n\nThere is... <Truncated in logs> ...he question doesn't match the document's contents."
+    },
+    {
+      "role": "user",
+      "content": "Read the file stress-corpus/file3.md completely — ... <Truncated in logs> ...intenance Ledger? Reply with just the designation."
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_3ef4309b53ab97674231569fac329b9f_0",
+          "type": "function",
+          "function": {
+            "name": "Read",
+            "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file3.md\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_3ef4309b53ab97674231569fac329b9f_0",
+      "content": "1\t# Talgarth Textile Mill Maintenance Ledger\n2\t# D... <Truncated in logs> ... entry 16599. Cross-reference volume 3, annex G14."
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_bfc6bfc0379fe175b27e269cac3fcb2a_0",
+          "type": "function",
+          "function": {
+            "name": "Read",
+            "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file3.md\",\"offset\":591}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_bfc6bfc0379fe175b27e269cac3fcb2a_0",
+      "content": "591\t\n592\t## Section 3.51 — loom bank group 199, sh... <Truncated in logs> ...th Textile Mill Maintenance Ledger, volume 3.\n988\t"
+    },
+    {
+      "role": "assistant",
+      "content": "\n\nI've read the entire file (988 lines).\n\nNo desig... <Truncated in logs> ...he question doesn't match the document's contents."
+    },
+    {
+      "role": "user",
+      "content": "Read the file stress-corpus/file4.md completely — ... <Truncated in logs> ...on Plant Runbook? Reply with just the designation."
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_a62399387b6b7c85d9c95f33c888f7e2_0",
+          "type": "function",
+          "function": {
+            "name": "Read",
+            "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file4.md\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_a62399387b6b7c85d9c95f33c888f7e2_0",
+      "content": "1\t# Coastal Desalination Plant Runbook\n2\t# Documen... <Truncated in logs> ...d entry 89616. Cross-reference volume 4, annex E3."
+    }
+  ],
+  "stream": false,
+  "max_tokens": 32000,
+  "reasoning_effort": "xhigh",
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "Agent",
+        "description": "Launch a new agent to handle complex, multi-step t... <Truncated in logs> ...er asks before it arrives, say it's still running.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "description": {
+              "description": "A short (3-5 word) description of the task",
+              "type": "string"
+            },
+            "prompt": {
+              "description": "The task for the agent to perform",
+              "type": "string"
+            },
+            "subagent_type": {
+              "description": "The type of specialized agent to use for this task",
+              "type": "string"
+            },
+            "model": {
+              "description": "Optional model override for this agent. Takes prec... <Truncated in logs> ...e: \"fork\" — forks always inherit the parent model.",
+              "type": "string",
+              "enum": [
+                "sonnet",
+                "opus",
+                "haiku",
+                "fable"
+              ]
+            },
+            "run_in_background": {
+              "description": "Agents run in the background by default; you will ... <Truncated in logs> ...he background so the user can hand you other work.",
+              "type": "boolean"
+            },
+            "isolation": {
+              "description": "Isolation mode. \"worktree\" creates a temporary git... <Truncated in logs> ...always runs in background; availability is gated).",
+              "type": "string",
+              "enum": [
+                "worktree",
+                "remote"
+              ]
+            }
+          },
+          "required": [
+            "description",
+            "prompt"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "Bash",
+        "description": "Executes a bash command and returns its output.\n\n-... <Truncated in logs> ...nversation's system-reminder, when one is present.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "command": {
+              "description": "The command to execute",
+              "type": "string"
+            },
+            "timeout": {
+              "description": "Optional timeout in milliseconds (max 600000)",
+              "type": "number"
+            },
+            "description": {
+              "description": "Clear, concise description of what this command do... <Truncated in logs> ...tch JSON from URL and extract data array elements\"",
+              "type": "string"
+            },
+            "run_in_background": {
+              "description": "Set to true to run this command in the background.",
+              "type": "boolean"
+            },
+            "dangerouslyDisableSandbox": {
+              "description": "Set this to true to dangerously override sandbox mode and run commands without sandboxing.",
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "command"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "CronCreate",
+        "description": "Schedule a prompt to be enqueued at a future time.... <Truncated in logs> ...obs.\n\nReturns a job ID you can pass to CronDelete.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "cron": {
+              "description": "Standard 5-field cron expression in local time: \"M... <Truncated in logs> ...es, \"30 14 28 2 *\" = Feb 28 at 2:30pm local once).",
+              "type": "string"
+            },
+            "prompt": {
+              "description": "The prompt to enqueue at each fire time.",
+              "type": "string"
+            },
+            "recurring": {
+              "description": "true (default) = fire on every cron match until de... <Truncated in logs> ...e-shot requests with pinned minute/hour/dom/month.",
+              "type": "boolean"
+            },
+            "durable": {
+              "description": "true = persist to .claude/scheduled_tasks.json and... <Truncated in logs> ...the user asks the task to survive across sessions.",
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "cron",
+            "prompt"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "CronDelete",
+        "description": "Cancel a cron job previously scheduled with CronCr... <Truncated in logs> ...r the in-memory session store (session-only jobs).",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "id": {
+              "description": "Job ID returned by CronCreate.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "id"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "CronList",
+        "description": "List all cron jobs scheduled via CronCreate, both durable (.claude/scheduled_tasks.json) and session-only.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {},
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "Edit",
+        "description": "Performs exact string replacement in a file.\n\n- Yo... <Truncated in logs> ...lace_all: true` replaces every occurrence instead.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "file_path": {
+              "description": "The absolute path to the file to modify",
+              "type": "string"
+            },
+            "old_string": {
+              "description": "The text to replace",
+              "type": "string"
+            },
+            "new_string": {
+              "description": "The text to replace it with (must be different from old_string)",
+              "type": "string"
+            },
+            "replace_all": {
+              "description": "Replace all occurrences of old_string (default false)",
+              "default": false,
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "file_path",
+            "old_string",
+            "new_string"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "EnterWorktree",
+        "description": "Use this tool ONLY when explicitly instructed to w... <Truncated in logs> ...nested inside it. Mutually exclusive with `name`.\n",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "name": {
+              "description": "Optional name for a new worktree. Each \"/\"-separat... <Truncated in logs> ...d if not provided. Mutually exclusive with `path`.",
+              "type": "string"
+            },
+            "path": {
+              "description": "Path to an existing worktree to switch into instea... <Truncated in logs> ...i-repo workspace). Mutually exclusive with `name`.",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "ExitWorktree",
+        "description": "Exit a worktree session created by EnterWorktree a... <Truncated in logs> ...ee can be called again to create a fresh worktree\n",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "action": {
+              "description": "\"keep\" leaves the worktree and branch on disk; \"remove\" deletes both.",
+              "type": "string",
+              "enum": [
+                "keep",
+                "remove"
+              ]
+            },
+            "discard_changes": {
+              "description": "Required true when action is \"remove\" and the work... <Truncated in logs> ...its. The tool will refuse and list them otherwise.",
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "action"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "ListAgents",
+        "description": "Lists agents you can SendMessage to — in-process s... <Truncated in logs> ...ws share it, or an error asks you to disambiguate.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "channel": {
+              "description": "Not available in this build; leave unset.",
+              "type": "string",
+              "maxLength": 256
+            },
+            "q": {
+              "description": "Not available in this build; leave unset.",
+              "type": "string",
+              "maxLength": 256
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "LSP",
+        "description": "Interact with Language Server Protocol (LSP) serve... <Truncated in logs> ...no server is available, an error will be returned.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "operation": {
+              "description": "The LSP operation to perform",
+              "type": "string",
+              "enum": [
+                "goToDefinition",
+                "findReferences",
+                "hover",
+                "documentSymbol",
+                "workspaceSymbol",
+                "goToImplementation",
+                "prepareCallHierarchy",
+                "incomingCalls",
+                "outgoingCalls"
+              ]
+            },
+            "filePath": {
+              "description": "The absolute or relative path to the file",
+              "type": "string"
+            },
+            "line": {
+              "description": "The line number (1-based, as shown in editors)",
+              "type": "integer",
+              "exclusiveMinimum": 0,
+              "maximum": 9007199254740991
+            },
+            "character": {
+              "description": "The character offset (1-based, as shown in editors)",
+              "type": "integer",
+              "exclusiveMinimum": 0,
+              "maximum": 9007199254740991
+            },
+            "query": {
+              "description": "The symbol name or partial name to search for (wor... <Truncated in logs> ..., so always provide it when using workspaceSymbol.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "operation",
+            "filePath",
+            "line",
+            "character"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "NotebookEdit",
+        "description": "Replaces, inserts, or deletes a single cell in a J... <Truncated in logs> ...d when inserting. Use `delete` to remove the cell.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "notebook_path": {
+              "description": "The absolute path to the Jupyter notebook file to edit (must be absolute, not relative)",
+              "type": "string"
+            },
+            "cell_id": {
+              "description": "The ID of the cell to edit. When inserting a new c... <Truncated in logs> ...ith this ID, or at the beginning if not specified.",
+              "type": "string"
+            },
+            "new_source": {
+              "description": "The new source for the cell",
+              "type": "string"
+            },
+            "cell_type": {
+              "description": "The type of the cell (code or markdown). If not sp... <Truncated in logs> ...type. If using edit_mode=insert, this is required.",
+              "type": "string",
+              "enum": [
+                "code",
+                "markdown"
+              ]
+            },
+            "edit_mode": {
+              "description": "The type of edit to make (replace, insert, delete). Defaults to replace.",
+              "type": "string",
+              "enum": [
+                "replace",
+                "insert",
+                "delete"
+              ]
+            }
+          },
+          "required": [
+            "notebook_path",
+            "new_source"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "Read",
+        "description": "Reads a file from the local filesystem.\n\n- `file_p... <Truncated in logs> ...failed, and the harness tracks file state for you.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "file_path": {
+              "description": "The absolute path to the file to read",
+              "type": "string"
+            },
+            "offset": {
+              "description": "The line number to start reading from. Only provide if the file is too large to read at once",
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "limit": {
+              "description": "The number of lines to read. Only provide if the file is too large to read at once.",
+              "type": "integer",
+              "exclusiveMinimum": 0,
+              "maximum": 9007199254740991
+            },
+            "pages": {
+              "description": "Page range for PDF files (e.g., \"1-5\", \"3\", \"10-20\"). Only applicable to PDF files. Maximum 20 pages per request.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "file_path"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "ReportFindings",
+        "description": "Report code-review findings as a typed list so the... <Truncated in logs> ...utcome` on each finding to what actually happened.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "level": {
+              "description": "Effort level the review ran at",
+              "type": "string",
+              "enum": [
+                "low",
+                "medium",
+                "high",
+                "xhigh",
+                "max"
+              ]
+            },
+            "findings": {
+              "description": "Verified findings, most-severe first; empty if none survived",
+              "maxItems": 32,
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "description": "Repo-relative path of the file the finding is in",
+                    "type": "string"
+                  },
+                  "line": {
+                    "description": "1-indexed line the finding anchors to",
+                    "type": "integer",
+                    "minimum": -9007199254740991,
+                    "maximum": 9007199254740991
+                  },
+                  "summary": {
+                    "description": "One-sentence statement of the defect",
+                    "type": "string"
+                  },
+                  "short_summary": {
+                    "description": "Compressed label for compact UI (≤60 chars): the claim alone, no rationale or consequence clause",
+                    "type": "string",
+                    "maxLength": 60
+                  },
+                  "failure_scenario": {
+                    "description": "Concrete inputs/state → wrong output/crash",
+                    "type": "string"
+                  },
+                  "category": {
+                    "description": "Short kebab-case slug of the finding type, e.g. \"correctness\", \"simplification\", \"efficiency\", \"test-coverage\"",
+                    "type": "string",
+                    "maxLength": 40
+                  },
+                  "verdict": {
+                    "description": "Set when a verify pass ran; absent on inline-only reviews",
+                    "type": "string",
+                    "enum": [
+                      "CONFIRMED",
+                      "PLAUSIBLE"
+                    ]
+                  },
+                  "outcome": {
+                    "description": "Set ONLY when re-reporting after applying fixes: what happened to this finding",
+                    "type": "string",
+                    "enum": [
+                      "fixed",
+                      "skipped",
+                      "no_change_needed"
+                    ]
+                  }
+                },
+                "required": [
+                  "file",
+                  "summary",
+                  "failure_scenario"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "findings"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "ScheduleWakeup",
+        "description": "Schedule when to resume work in /loop dynamic mode... <Truncated in logs> ...edict your cadence in advance — make it specific.\n",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "delaySeconds": {
+              "description": "Seconds from now to wake up. Clamped to [60, 3600] by the runtime. Required unless `stop` is true.",
+              "type": "number"
+            },
+            "reason": {
+              "description": "One short sentence explaining the chosen delay. Go... <Truncated in logs> ...user. Be specific. Required unless `stop` is true.",
+              "type": "string"
+            },
+            "prompt": {
+              "description": "The /loop input to fire on wake-up. Pass the same ... <Truncated in logs> ...tonomous-loop>>`). Required unless `stop` is true.",
+              "type": "string"
+            },
+            "stop": {
+              "description": "Set to true to end the dynamic loop immediately in... <Truncated in logs> ...er fields are ignored and no further wakeups fire.",
+              "type": "boolean"
+            },
+            "noop": {
+              "description": "true = nothing changed (you checked and there is n... <Truncated in logs> ...acked as a streak. Required unless `stop` is true.",
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "SendMessage",
+        "description": "# SendMessage\n\nSend a message to another agent.\n\n`... <Truncated in logs> ...ng). Route blocked work back to your user instead.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "to": {
+              "description": "Recipient: a name from ListAgents (append its \" [r... <Truncated in logs> ...mate name, \"main\", or a background agent's agentId",
+              "type": "string",
+              "allOf": [
+                {
+                  "pattern": "^[^\\n\\r]*$"
+                },
+                {
+                  "pattern": "^[\\s\\S]{0,300}$"
+                }
+              ]
+            },
+            "summary": {
+              "description": "A 5-10 word label for your own transcript row (not... <Truncated in logs> ... Truncated to 200 characters rather than rejected.",
+              "type": "string",
+              "maxLength": 200
+            },
+            "message": {
+              "default": "",
+              "description": "Plain text message content. The recipient's human ... <Truncated in logs> ...out — not a greeting, preamble, or bare @-mention.",
+              "type": "string"
+            },
+            "notify_when_idle": {
+              "description": "Ask a session ON THIS MACHINE to send you ONE noti... <Truncated in logs> ...subscription that costs the other session nothing.",
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "to",
+            "message"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "Skill",
+        "description": "Invoke a skill.\n\nA skill is a packaged set of inst... <Truncated in logs> ...d — follow it directly rather than calling again.\n",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "skill": {
+              "description": "The name of a skill from the available-skills list. Do not guess names.",
+              "type": "string"
+            },
+            "args": {
+              "description": "Optional arguments for the skill",
+              "type": "string"
+            }
+          },
+          "required": [
+            "skill"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "TaskStop",
+        "description": "\n- Stops a running background task by its ID\n- Tak... <Truncated in logs> ...ol when you need to terminate a long-running task\n",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "task_id": {
+              "description": "The ID of the background task to stop. Agent-team ... <Truncated in logs> ...ound agents are also accepted by agent ID or name.",
+              "type": "string"
+            },
+            "shell_id": {
+              "description": "Deprecated: use task_id instead",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "WebFetch",
+        "description": "Fetches a URL, converts the page to markdown, and ... <Truncated in logs> ...RL.\n- Responses are cached for 15 minutes per URL.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "url": {
+              "description": "The URL to fetch content from",
+              "type": "string",
+              "format": "uri"
+            },
+            "prompt": {
+              "description": "The prompt to run on the fetched content",
+              "type": "string"
+            }
+          },
+          "required": [
+            "url",
+            "prompt"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "WebSearch",
+        "description": "Search the web. Returns result blocks with titles ... <Truncated in logs> ...ces:\" list of the URLs you used as markdown links.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "query": {
+              "description": "The search query to use",
+              "type": "string",
+              "minLength": 2
+            },
+            "allowed_domains": {
+              "description": "Only include search results from these domains",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "blocked_domains": {
+              "description": "Never include search results from these domains",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "query"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "Workflow",
+        "description": "Execute a workflow script that orchestrates multip... <Truncated in logs> ...remove it with \"Dynamic workflow size\" in /config.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "script": {
+              "description": "Self-contained workflow script. Must begin with `e... <Truncated in logs> ... body using agent()/parallel()/pipeline()/phase().",
+              "type": "string",
+              "maxLength": 524288
+            },
+            "name": {
+              "description": "Name of a predefined workflow (built-in or from .claude/workflows/). Resolves to a self-contained script.",
+              "type": "string"
+            },
+            "description": {
+              "description": "Ignored — set the workflow description in the script's `meta` block.",
+              "type": "string"
+            },
+            "title": {
+              "description": "Ignored — set the workflow title in the script's `meta` block.",
+              "type": "string"
+            },
+            "args": {
+              "description": "Optional input value exposed to the script as the ... <Truncated in logs> ...erized named workflows (e.g. a research question)."
+            },
+            "scriptPath": {
+              "description": "Path to a workflow script file on disk. Every Work... <Truncated in logs> ...script. Takes precedence over `script` and `name`.",
+              "type": "string"
+            },
+            "resumeFromRunId": {
+              "description": "Run ID of a prior Workflow invocation to resume fr... <Truncated in logs> ...op the prior run first (TaskStop) before resuming.",
+              "type": "string",
+              "pattern": "^wf_[a-z0-9-]{6,}$"
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "Write",
+        "description": "Writes a file to the local filesystem, overwriting... <Truncated in logs> ... will fail. For partial changes, use Edit instead.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "file_path": {
+              "description": "The absolute path to the file to write (must be absolute, not relative)",
+              "type": "string"
+            },
+            "content": {
+              "description": "The content to write to the file",
+              "type": "string"
+            }
+          },
+          "required": [
+            "file_path",
+            "content"
+          ],
+          "additionalProperties": false
+        }
+      }
+    }
+  ]
+}
+[2026-09-27 10:39:27][WARN][qwen-local] Reasoning setting 'xhigh' is not supported by model 'incoai/Qwen3.8-27B-Splash'. Supported settings: 'on', 'off'. Falling back to reasoning setting 'on'.
+[2026-09-27 10:39:27][INFO][qwen-local] Running chat completion on conversation with 22 messages.
+[2026-09-27 10:39:35][DEBUG] 10:39:35 Cancelled · input 180,522 · cached 15,872 · output 0 · tools 21·d421ffe0
+[2026-09-27 10:39:35][INFO][qwen-local] Prompt processing progress: 0.0%
+[2026-09-27 10:39:44][INFO][qwen-local] Prompt processing progress: 2.8%
+[2026-09-27 10:39:53][INFO][qwen-local] Prompt processing progress: 5.5%
+[2026-09-27 10:40:02][INFO][qwen-local] Prompt processing progress: 8.3%
+[2026-09-27 10:40:11][INFO][qwen-local] Prompt processing progress: 11.1%
+[2026-09-27 10:40:21][INFO][qwen-local] Prompt processing progress: 13.8%
+[2026-09-27 10:40:30][INFO][qwen-local] Prompt processing progress: 16.6%
+[2026-09-27 10:40:40][INFO][qwen-local] Prompt processing progress: 19.4%
+[2026-09-27 10:40:49][INFO][qwen-local] Prompt processing progress: 22.1%
+[2026-09-27 10:40:59][INFO][qwen-local] Prompt processing progress: 24.9%
+[2026-09-27 10:41:10][INFO][qwen-local] Prompt processing progress: 27.7%
+[2026-09-27 10:41:20][INFO][qwen-local] Prompt processing progress: 30.4%
+[2026-09-27 10:41:31][INFO][qwen-local] Prompt processing progress: 33.2%
+[2026-09-27 10:41:41][INFO][qwen-local] Prompt processing progress: 36.0%
+[2026-09-27 10:41:52][INFO][qwen-local] Prompt processing progress: 38.7%
+[2026-09-27 10:42:02][INFO][qwen-local] Prompt processing progress: 41.5%
+[2026-09-27 10:42:13][INFO][qwen-local] Prompt processing progress: 44.3%
+[2026-09-27 10:42:24][INFO][qwen-local] Prompt processing progress: 47.0%
+[2026-09-27 10:42:34][INFO][qwen-local] Prompt processing progress: 49.8%
+[2026-09-27 10:42:45][INFO][qwen-local] Prompt processing progress: 52.6%
+[2026-09-27 10:42:56][INFO][qwen-local] Prompt processing progress: 55.3%
+[2026-09-27 10:43:07][INFO][qwen-local] Prompt processing progress: 58.1%
+[2026-09-27 10:43:16][DEBUG][LMSAuthenticator][Client=lms-cli] Client created.
+[2026-09-27 10:43:16][INFO][LMSAuthenticator][Client=lms-cli][Endpoint=listDownloadedModels] Listing downloaded models
+[2026-09-27 10:43:16][INFO][LMSAuthenticator][Client=lms-cli][Endpoint=listLoaded] Listing loaded models
+[2026-09-27 10:43:16][INFO][LMSAuthenticator][Client=lms-cli][Endpoint=listLoaded] Listing loaded models
+[2026-09-27 10:43:16][INFO][LMSAuthenticator][Client=lms-cli][Endpoint=getModelInfo] Getting descriptor for specifier: {"type":"instanceReference","instanceReference":"9oiK30snNLUwjO/kbMblRwfi"}
+[2026-09-27 10:43:16][DEBUG][LMSAuthenticator][Client=lms-cli] Client disconnected.
+[2026-09-27 10:43:18][INFO][qwen-local] Prompt processing progress: 60.9%
+[2026-09-27 10:43:29][INFO][qwen-local] Prompt processing progress: 63.6%
+[2026-09-27 10:43:40][INFO][qwen-local] Prompt processing progress: 66.4%
+[2026-09-27 10:43:52][INFO][qwen-local] Prompt processing progress: 69.2%
+[2026-09-27 10:44:03][INFO][qwen-local] Prompt processing progress: 71.9%
+[2026-09-27 10:44:14][INFO][qwen-local] Prompt processing progress: 74.7%
+[2026-09-27 10:44:26][INFO][qwen-local] Prompt processing progress: 77.5%
+[2026-09-27 10:44:28][INFO][LM STUDIO SERVER] Client disconnected. Stopping generation... (If the model is busy processing the prompt, it will finish first.)
+[2026-09-27 10:44:28][INFO][qwen-local] Model generated tool calls: []
+[2026-09-27 10:44:28][INFO][qwen-local] Generated prediction: {
+  "id": "chatcmpl-vc4zd7t6fctf4amk1eu2",
+  "object": "chat.completion",
+  "created": 1790530767,
+  "model": "qwen-local",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "reasoning_content": "",
+        "tool_calls": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "stats": {},
+  "system_fingerprint": "qwen-local"
+}
+[2026-09-27 10:44:29][DEBUG] Received request: POST to /v1/chat/completions with body {
+  "model": "qwen-local",
+  "messages": [
+    {
+      "role": "system",
+      "content": "x-anthropic-billing-header: cc_version=2.1.283.efe... <Truncated in logs> ...e alone if the answer may be further in the file.]"
+    },
+    {
+      "role": "user",
+      "content": "<system-reminder>\nAs you answer the user's questio... <Truncated in logs> ...he Kestrel Basin? Reply with just the designation."
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_4d674eae09e46aba05482ece63b84860_0",
+          "type": "function",
+          "function": {
+            "name": "Read",
+            "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file1.md\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_4d674eae09e46aba05482ece63b84860_0",
+      "content": "1\t# Ferrovial Survey of the Kestrel Basin\n2\t# Docu... <Truncated in logs> ...d entry 16223. Cross-reference volume 1, annex C2."
+    },
+    {
+      "role": "assistant",
+      "content": "\n\nThe first read was truncated at line 593 — continuing from there.\n\n",
+      "tool_calls": [
+        {
+          "id": "call_4126b61c648e451e98d6441cd6c924ee_0",
+          "type": "function",
+          "function": {
+            "name": "Read",
+            "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file1.md\",\"offset\":594}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_4126b61c648e451e98d6441cd6c924ee_0",
+      "content": "594\t- borehole 9717 / stratum 16: reading 44.32 at... <Truncated in logs> ...rovial Survey of the Kestrel Basin, volume 1.\n996\t"
+    },
+    {
+      "role": "assistant",
+      "content": "\n\nTANGERINE-LYNX"
+    },
+    {
+      "role": "user",
+      "content": "Read the file stress-corpus/file2.md completely — ... <Truncated in logs> ...Husbandry Manual? Reply with just the designation."
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_79aa57f38cc49b718632f10415eb14d2_0",
+          "type": "function",
+          "function": {
+            "name": "Read",
+            "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file2.md\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_79aa57f38cc49b718632f10415eb14d2_0",
+      "content": "1\t# Meridian Aviary Husbandry Manual\n2\t# Document ... <Truncated in logs> ...d entry 35564. Cross-reference volume 2, annex D7."
+    },
+    {
+      "role": "assistant",
+      "content": "\n\nContinuing with the rest of the file.\n\n",
+      "tool_calls": [
+        {
+          "id": "call_f6093421f1263b89dff55bb8405fa168_0",
+          "type": "function",
+          "function": {
+            "name": "Read",
+            "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file2.md\",\"offset\":592}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_f6093421f1263b89dff55bb8405fa168_0",
+      "content": "592\t- enclosure 6493 / flock 45: reading 47.67 at ... <Truncated in logs> ...f Meridian Aviary Husbandry Manual, volume 2.\n995\t"
+    },
+    {
+      "role": "assistant",
+      "content": "\n\nI've read the entire file (995 lines).\n\nThere is... <Truncated in logs> ...he question doesn't match the document's contents."
+    },
+    {
+      "role": "user",
+      "content": "Read the file stress-corpus/file3.md completely — ... <Truncated in logs> ...intenance Ledger? Reply with just the designation."
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_3ef4309b53ab97674231569fac329b9f_0",
+          "type": "function",
+          "function": {
+            "name": "Read",
+            "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file3.md\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_3ef4309b53ab97674231569fac329b9f_0",
+      "content": "1\t# Talgarth Textile Mill Maintenance Ledger\n2\t# D... <Truncated in logs> ... entry 16599. Cross-reference volume 3, annex G14."
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_bfc6bfc0379fe175b27e269cac3fcb2a_0",
+          "type": "function",
+          "function": {
+            "name": "Read",
+            "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file3.md\",\"offset\":591}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_bfc6bfc0379fe175b27e269cac3fcb2a_0",
+      "content": "591\t\n592\t## Section 3.51 — loom bank group 199, sh... <Truncated in logs> ...th Textile Mill Maintenance Ledger, volume 3.\n988\t"
+    },
+    {
+      "role": "assistant",
+      "content": "\n\nI've read the entire file (988 lines).\n\nNo desig... <Truncated in logs> ...he question doesn't match the document's contents."
+    },
+    {
+      "role": "user",
+      "content": "Read the file stress-corpus/file4.md completely — ... <Truncated in logs> ...on Plant Runbook? Reply with just the designation."
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_a62399387b6b7c85d9c95f33c888f7e2_0",
+          "type": "function",
+          "function": {
+            "name": "Read",
+            "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file4.md\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_a62399387b6b7c85d9c95f33c888f7e2_0",
+      "content": "1\t# Coastal Desalination Plant Runbook\n2\t# Documen... <Truncated in logs> ...d entry 89616. Cross-reference volume 4, annex E3."
+    }
+  ],
+  "stream": false,
+  "max_tokens": 32000,
+  "reasoning_effort": "xhigh",
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "Agent",
+        "description": "Launch a new agent to handle complex, multi-step t... <Truncated in logs> ...er asks before it arrives, say it's still running.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "description": {
+              "description": "A short (3-5 word) description of the task",
+              "type": "string"
+            },
+            "prompt": {
+              "description": "The task for the agent to perform",
+              "type": "string"
+            },
+            "subagent_type": {
+              "description": "The type of specialized agent to use for this task",
+              "type": "string"
+            },
+            "model": {
+              "description": "Optional model override for this agent. Takes prec... <Truncated in logs> ...e: \"fork\" — forks always inherit the parent model.",
+              "type": "string",
+              "enum": [
+                "sonnet",
+                "opus",
+                "haiku",
+                "fable"
+              ]
+            },
+            "run_in_background": {
+              "description": "Agents run in the background by default; you will ... <Truncated in logs> ...he background so the user can hand you other work.",
+              "type": "boolean"
+            },
+            "isolation": {
+              "description": "Isolation mode. \"worktree\" creates a temporary git... <Truncated in logs> ...always runs in background; availability is gated).",
+              "type": "string",
+              "enum": [
+                "worktree",
+                "remote"
+              ]
+            }
+          },
+          "required": [
+            "description",
+            "prompt"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "Bash",
+        "description": "Executes a bash command and returns its output.\n\n-... <Truncated in logs> ...nversation's system-reminder, when one is present.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "command": {
+              "description": "The command to execute",
+              "type": "string"
+            },
+            "timeout": {
+              "description": "Optional timeout in milliseconds (max 600000)",
+              "type": "number"
+            },
+            "description": {
+              "description": "Clear, concise description of what this command do... <Truncated in logs> ...tch JSON from URL and extract data array elements\"",
+              "type": "string"
+            },
+            "run_in_background": {
+              "description": "Set to true to run this command in the background.",
+              "type": "boolean"
+            },
+            "dangerouslyDisableSandbox": {
+              "description": "Set this to true to dangerously override sandbox mode and run commands without sandboxing.",
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "command"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "CronCreate",
+        "description": "Schedule a prompt to be enqueued at a future time.... <Truncated in logs> ...obs.\n\nReturns a job ID you can pass to CronDelete.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "cron": {
+              "description": "Standard 5-field cron expression in local time: \"M... <Truncated in logs> ...es, \"30 14 28 2 *\" = Feb 28 at 2:30pm local once).",
+              "type": "string"
+            },
+            "prompt": {
+              "description": "The prompt to enqueue at each fire time.",
+              "type": "string"
+            },
+            "recurring": {
+              "description": "true (default) = fire on every cron match until de... <Truncated in logs> ...e-shot requests with pinned minute/hour/dom/month.",
+              "type": "boolean"
+            },
+            "durable": {
+              "description": "true = persist to .claude/scheduled_tasks.json and... <Truncated in logs> ...the user asks the task to survive across sessions.",
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "cron",
+            "prompt"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "CronDelete",
+        "description": "Cancel a cron job previously scheduled with CronCr... <Truncated in logs> ...r the in-memory session store (session-only jobs).",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "id": {
+              "description": "Job ID returned by CronCreate.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "id"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "CronList",
+        "description": "List all cron jobs scheduled via CronCreate, both durable (.claude/scheduled_tasks.json) and session-only.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {},
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "Edit",
+        "description": "Performs exact string replacement in a file.\n\n- Yo... <Truncated in logs> ...lace_all: true` replaces every occurrence instead.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "file_path": {
+              "description": "The absolute path to the file to modify",
+              "type": "string"
+            },
+            "old_string": {
+              "description": "The text to replace",
+              "type": "string"
+            },
+            "new_string": {
+              "description": "The text to replace it with (must be different from old_string)",
+              "type": "string"
+            },
+            "replace_all": {
+              "description": "Replace all occurrences of old_string (default false)",
+              "default": false,
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "file_path",
+            "old_string",
+            "new_string"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "EnterWorktree",
+        "description": "Use this tool ONLY when explicitly instructed to w... <Truncated in logs> ...nested inside it. Mutually exclusive with `name`.\n",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "name": {
+              "description": "Optional name for a new worktree. Each \"/\"-separat... <Truncated in logs> ...d if not provided. Mutually exclusive with `path`.",
+              "type": "string"
+            },
+            "path": {
+              "description": "Path to an existing worktree to switch into instea... <Truncated in logs> ...i-repo workspace). Mutually exclusive with `name`.",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "ExitWorktree",
+        "description": "Exit a worktree session created by EnterWorktree a... <Truncated in logs> ...ee can be called again to create a fresh worktree\n",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "action": {
+              "description": "\"keep\" leaves the worktree and branch on disk; \"remove\" deletes both.",
+              "type": "string",
+              "enum": [
+                "keep",
+                "remove"
+              ]
+            },
+            "discard_changes": {
+              "description": "Required true when action is \"remove\" and the work... <Truncated in logs> ...its. The tool will refuse and list them otherwise.",
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "action"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "ListAgents",
+        "description": "Lists agents you can SendMessage to — in-process s... <Truncated in logs> ...ws share it, or an error asks you to disambiguate.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "channel": {
+              "description": "Not available in this build; leave unset.",
+              "type": "string",
+              "maxLength": 256
+            },
+            "q": {
+              "description": "Not available in this build; leave unset.",
+              "type": "string",
+              "maxLength": 256
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "LSP",
+        "description": "Interact with Language Server Protocol (LSP) serve... <Truncated in logs> ...no server is available, an error will be returned.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "operation": {
+              "description": "The LSP operation to perform",
+              "type": "string",
+              "enum": [
+                "goToDefinition",
+                "findReferences",
+                "hover",
+                "documentSymbol",
+                "workspaceSymbol",
+                "goToImplementation",
+                "prepareCallHierarchy",
+                "incomingCalls",
+                "outgoingCalls"
+              ]
+            },
+            "filePath": {
+              "description": "The absolute or relative path to the file",
+              "type": "string"
+            },
+            "line": {
+              "description": "The line number (1-based, as shown in editors)",
+              "type": "integer",
+              "exclusiveMinimum": 0,
+              "maximum": 9007199254740991
+            },
+            "character": {
+              "description": "The character offset (1-based, as shown in editors)",
+              "type": "integer",
+              "exclusiveMinimum": 0,
+              "maximum": 9007199254740991
+            },
+            "query": {
+              "description": "The symbol name or partial name to search for (wor... <Truncated in logs> ..., so always provide it when using workspaceSymbol.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "operation",
+            "filePath",
+            "line",
+            "character"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "NotebookEdit",
+        "description": "Replaces, inserts, or deletes a single cell in a J... <Truncated in logs> ...d when inserting. Use `delete` to remove the cell.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "notebook_path": {
+              "description": "The absolute path to the Jupyter notebook file to edit (must be absolute, not relative)",
+              "type": "string"
+            },
+            "cell_id": {
+              "description": "The ID of the cell to edit. When inserting a new c... <Truncated in logs> ...ith this ID, or at the beginning if not specified.",
+              "type": "string"
+            },
+            "new_source": {
+              "description": "The new source for the cell",
+              "type": "string"
+            },
+            "cell_type": {
+              "description": "The type of the cell (code or markdown). If not sp... <Truncated in logs> ...type. If using edit_mode=insert, this is required.",
+              "type": "string",
+              "enum": [
+                "code",
+                "markdown"
+              ]
+            },
+            "edit_mode": {
+              "description": "The type of edit to make (replace, insert, delete). Defaults to replace.",
+              "type": "string",
+              "enum": [
+                "replace",
+                "insert",
+                "delete"
+              ]
+            }
+          },
+          "required": [
+            "notebook_path",
+            "new_source"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "Read",
+        "description": "Reads a file from the local filesystem.\n\n- `file_p... <Truncated in logs> ...failed, and the harness tracks file state for you.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "file_path": {
+              "description": "The absolute path to the file to read",
+              "type": "string"
+            },
+            "offset": {
+              "description": "The line number to start reading from. Only provide if the file is too large to read at once",
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "limit": {
+              "description": "The number of lines to read. Only provide if the file is too large to read at once.",
+              "type": "integer",
+              "exclusiveMinimum": 0,
+              "maximum": 9007199254740991
+            },
+            "pages": {
+              "description": "Page range for PDF files (e.g., \"1-5\", \"3\", \"10-20\"). Only applicable to PDF files. Maximum 20 pages per request.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "file_path"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "ReportFindings",
+        "description": "Report code-review findings as a typed list so the... <Truncated in logs> ...utcome` on each finding to what actually happened.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "level": {
+              "description": "Effort level the review ran at",
+              "type": "string",
+              "enum": [
+                "low",
+                "medium",
+                "high",
+                "xhigh",
+                "max"
+              ]
+            },
+            "findings": {
+              "description": "Verified findings, most-severe first; empty if none survived",
+              "maxItems": 32,
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "description": "Repo-relative path of the file the finding is in",
+                    "type": "string"
+                  },
+                  "line": {
+                    "description": "1-indexed line the finding anchors to",
+                    "type": "integer",
+                    "minimum": -9007199254740991,
+                    "maximum": 9007199254740991
+                  },
+                  "summary": {
+                    "description": "One-sentence statement of the defect",
+                    "type": "string"
+                  },
+                  "short_summary": {
+                    "description": "Compressed label for compact UI (≤60 chars): the claim alone, no rationale or consequence clause",
+                    "type": "string",
+                    "maxLength": 60
+                  },
+                  "failure_scenario": {
+                    "description": "Concrete inputs/state → wrong output/crash",
+                    "type": "string"
+                  },
+                  "category": {
+                    "description": "Short kebab-case slug of the finding type, e.g. \"correctness\", \"simplification\", \"efficiency\", \"test-coverage\"",
+                    "type": "string",
+                    "maxLength": 40
+                  },
+                  "verdict": {
+                    "description": "Set when a verify pass ran; absent on inline-only reviews",
+                    "type": "string",
+                    "enum": [
+                      "CONFIRMED",
+                      "PLAUSIBLE"
+                    ]
+                  },
+                  "outcome": {
+                    "description": "Set ONLY when re-reporting after applying fixes: what happened to this finding",
+                    "type": "string",
+                    "enum": [
+                      "fixed",
+                      "skipped",
+                      "no_change_needed"
+                    ]
+                  }
+                },
+                "required": [
+                  "file",
+                  "summary",
+                  "failure_scenario"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "findings"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "ScheduleWakeup",
+        "description": "Schedule when to resume work in /loop dynamic mode... <Truncated in logs> ...edict your cadence in advance — make it specific.\n",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "delaySeconds": {
+              "description": "Seconds from now to wake up. Clamped to [60, 3600] by the runtime. Required unless `stop` is true.",
+              "type": "number"
+            },
+            "reason": {
+              "description": "One short sentence explaining the chosen delay. Go... <Truncated in logs> ...user. Be specific. Required unless `stop` is true.",
+              "type": "string"
+            },
+            "prompt": {
+              "description": "The /loop input to fire on wake-up. Pass the same ... <Truncated in logs> ...tonomous-loop>>`). Required unless `stop` is true.",
+              "type": "string"
+            },
+            "stop": {
+              "description": "Set to true to end the dynamic loop immediately in... <Truncated in logs> ...er fields are ignored and no further wakeups fire.",
+              "type": "boolean"
+            },
+            "noop": {
+              "description": "true = nothing changed (you checked and there is n... <Truncated in logs> ...acked as a streak. Required unless `stop` is true.",
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "SendMessage",
+        "description": "# SendMessage\n\nSend a message to another agent.\n\n`... <Truncated in logs> ...ng). Route blocked work back to your user instead.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "to": {
+              "description": "Recipient: a name from ListAgents (append its \" [r... <Truncated in logs> ...mate name, \"main\", or a background agent's agentId",
+              "type": "string",
+              "allOf": [
+                {
+                  "pattern": "^[^\\n\\r]*$"
+                },
+                {
+                  "pattern": "^[\\s\\S]{0,300}$"
+                }
+              ]
+            },
+            "summary": {
+              "description": "A 5-10 word label for your own transcript row (not... <Truncated in logs> ... Truncated to 200 characters rather than rejected.",
+              "type": "string",
+              "maxLength": 200
+            },
+            "message": {
+              "default": "",
+              "description": "Plain text message content. The recipient's human ... <Truncated in logs> ...out — not a greeting, preamble, or bare @-mention.",
+              "type": "string"
+            },
+            "notify_when_idle": {
+              "description": "Ask a session ON THIS MACHINE to send you ONE noti... <Truncated in logs> ...subscription that costs the other session nothing.",
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "to",
+            "message"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "Skill",
+        "description": "Invoke a skill.\n\nA skill is a packaged set of inst... <Truncated in logs> ...d — follow it directly rather than calling again.\n",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "skill": {
+              "description": "The name of a skill from the available-skills list. Do not guess names.",
+              "type": "string"
+            },
+            "args": {
+              "description": "Optional arguments for the skill",
+              "type": "string"
+            }
+          },
+          "required": [
+            "skill"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "TaskStop",
+        "description": "\n- Stops a running background task by its ID\n- Tak... <Truncated in logs> ...ol when you need to terminate a long-running task\n",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "task_id": {
+              "description": "The ID of the background task to stop. Agent-team ... <Truncated in logs> ...ound agents are also accepted by agent ID or name.",
+              "type": "string"
+            },
+            "shell_id": {
+              "description": "Deprecated: use task_id instead",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "WebFetch",
+        "description": "Fetches a URL, converts the page to markdown, and ... <Truncated in logs> ...RL.\n- Responses are cached for 15 minutes per URL.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "url": {
+              "description": "The URL to fetch content from",
+              "type": "string",
+              "format": "uri"
+            },
+            "prompt": {
+              "description": "The prompt to run on the fetched content",
+              "type": "string"
+            }
+          },
+          "required": [
+            "url",
+            "prompt"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "WebSearch",
+        "description": "Search the web. Returns result blocks with titles ... <Truncated in logs> ...ces:\" list of the URLs you used as markdown links.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "query": {
+              "description": "The search query to use",
+              "type": "string",
+              "minLength": 2
+            },
+            "allowed_domains": {
+              "description": "Only include search results from these domains",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "blocked_domains": {
+              "description": "Never include search results from these domains",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "query"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "Workflow",
+        "description": "Execute a workflow script that orchestrates multip... <Truncated in logs> ...remove it with \"Dynamic workflow size\" in /config.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "script": {
+              "description": "Self-contained workflow script. Must begin with `e... <Truncated in logs> ... body using agent()/parallel()/pipeline()/phase().",
+              "type": "string",
+              "maxLength": 524288
+            },
+            "name": {
+              "description": "Name of a predefined workflow (built-in or from .claude/workflows/). Resolves to a self-contained script.",
+              "type": "string"
+            },
+            "description": {
+              "description": "Ignored — set the workflow description in the script's `meta` block.",
+              "type": "string"
+            },
+            "title": {
+              "description": "Ignored — set the workflow title in the script's `meta` block.",
+              "type": "string"
+            },
+            "args": {
+              "description": "Optional input value exposed to the script as the ... <Truncated in logs> ...erized named workflows (e.g. a research question)."
+            },
+            "scriptPath": {
+              "description": "Path to a workflow script file on disk. Every Work... <Truncated in logs> ...script. Takes precedence over `script` and `name`.",
+              "type": "string"
+            },
+            "resumeFromRunId": {
+              "description": "Run ID of a prior Workflow invocation to resume fr... <Truncated in logs> ...op the prior run first (TaskStop) before resuming.",
+              "type": "string",
+              "pattern": "^wf_[a-z0-9-]{6,}$"
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "Write",
+        "description": "Writes a file to the local filesystem, overwriting... <Truncated in logs> ... will fail. For partial changes, use Edit instead.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "file_path": {
+              "description": "The absolute path to the file to write (must be absolute, not relative)",
+              "type": "string"
+            },
+            "content": {
+              "description": "The content to write to the file",
+              "type": "string"
+            }
+          },
+          "required": [
+            "file_path",
+            "content"
+          ],
+          "additionalProperties": false
+        }
+      }
+    }
+  ]
+}
+[2026-09-27 10:44:29][WARN][qwen-local] Reasoning setting 'xhigh' is not supported by model 'incoai/Qwen3.8-27B-Splash'. Supported settings: 'on', 'off'. Falling back to reasoning setting 'on'.
+[2026-09-27 10:44:29][INFO][qwen-local] Running chat completion on conversation with 22 messages.
+[2026-09-27 10:44:37][DEBUG] 10:44:37 Cancelled · input 180,522 · cached 106,496 · output 0 · tools 21·d421ffe0
+[2026-09-27 10:44:37][INFO][qwen-local] Prompt processing progress: 0.0%
+[2026-09-27 10:44:49][INFO][qwen-local] Prompt processing progress: 12.3%
+[2026-09-27 10:45:00][INFO][qwen-local] Prompt processing progress: 24.6%
+[2026-09-27 10:45:12][INFO][qwen-local] Prompt processing progress: 36.8%
+[2026-09-27 10:45:23][INFO][qwen-local] Prompt processing progress: 49.1%
+[2026-09-27 10:45:35][INFO][qwen-local] Prompt processing progress: 61.4%
+[2026-09-27 10:45:47][INFO][qwen-local] Prompt processing progress: 73.7%
+[2026-09-27 10:45:59][INFO][qwen-local] Prompt processing progress: 85.9%
+[2026-09-27 10:46:11][INFO][qwen-local] Prompt processing progress: 98.2%
+[2026-09-27 10:46:13][INFO][qwen-local] Prompt processing progress: 99.9%
+[2026-09-27 10:46:13][INFO][qwen-local] Prompt processing progress: 100.0%
+[2026-09-27 10:46:13][INFO][qwen-local] Start to generate a tool call...
+[2026-09-27 10:46:13][INFO][qwen-local] Tool name generated: Read
+[2026-09-27 10:46:15][DEBUG] 10:46:15 Done · input 180,522 · cached 163,840 · output 65 · tools 21·d421ffe0 · TTFT 103.9s · 37.3 tok/s
+[2026-09-27 10:46:15][DEBUG] 
+[2026-09-27 10:46:15][INFO][qwen-local] Model generated a tool call.
+[2026-09-27 10:46:15][INFO][qwen-local] Model generated tool calls: [Read(file_path="/Users/yash/Desktop/Programmi...", offset=578)]
+[2026-09-27 10:46:15][INFO][qwen-local] Generated prediction: {
+  "id": "chatcmpl-grjpptdn0oj4djd804ztgb",
+  "object": "chat.completion",
+  "created": 1790531069,
+  "model": "qwen-local",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "reasoning_content": "Continue reading from 578.\n",
+        "tool_calls": [
+          {
+            "type": "function",
+            "id": "call_19f6b50c2e8444a384bcdad00f2a5688_0",
+            "function": {
+              "name": "Read",
+              "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file4.md\",\"offset\":578}"
+            }
+          }
+        ]
+      },
+      "logprobs": null,
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 180522,
+    "completion_tokens": 65,
+    "total_tokens": 180587,
+    "completion_tokens_details": {
+      "reasoning_tokens": 9
+    }
+  },
+  "stats": {},
+  "system_fingerprint": "qwen-local"
+}
+[2026-09-27 10:46:15][DEBUG] Received request: POST to /v1/chat/completions with body {
+  "model": "qwen-local",
+  "messages": [
+    {
+      "role": "system",
+      "content": "x-anthropic-billing-header: cc_version=2.1.283.efe... <Truncated in logs> ...e alone if the answer may be further in the file.]"
+    },
+    {
+      "role": "user",
+      "content": "<system-reminder>\nAs you answer the user's questio... <Truncated in logs> ...he Kestrel Basin? Reply with just the designation."
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_4d674eae09e46aba05482ece63b84860_0",
+          "type": "function",
+          "function": {
+            "name": "Read",
+            "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file1.md\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_4d674eae09e46aba05482ece63b84860_0",
+      "content": "1\t# Ferrovial Survey of the Kestrel Basin\n2\t# Docu... <Truncated in logs> ...d entry 16223. Cross-reference volume 1, annex C2."
+    },
+    {
+      "role": "assistant",
+      "content": "\n\nThe first read was truncated at line 593 — continuing from there.\n\n",
+      "tool_calls": [
+        {
+          "id": "call_4126b61c648e451e98d6441cd6c924ee_0",
+          "type": "function",
+          "function": {
+            "name": "Read",
+            "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file1.md\",\"offset\":594}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_4126b61c648e451e98d6441cd6c924ee_0",
+      "content": "594\t- borehole 9717 / stratum 16: reading 44.32 at... <Truncated in logs> ...rovial Survey of the Kestrel Basin, volume 1.\n996\t"
+    },
+    {
+      "role": "assistant",
+      "content": "\n\nTANGERINE-LYNX"
+    },
+    {
+      "role": "user",
+      "content": "Read the file stress-corpus/file2.md completely — ... <Truncated in logs> ...Husbandry Manual? Reply with just the designation."
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_79aa57f38cc49b718632f10415eb14d2_0",
+          "type": "function",
+          "function": {
+            "name": "Read",
+            "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file2.md\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_79aa57f38cc49b718632f10415eb14d2_0",
+      "content": "1\t# Meridian Aviary Husbandry Manual\n2\t# Document ... <Truncated in logs> ...d entry 35564. Cross-reference volume 2, annex D7."
+    },
+    {
+      "role": "assistant",
+      "content": "\n\nContinuing with the rest of the file.\n\n",
+      "tool_calls": [
+        {
+          "id": "call_f6093421f1263b89dff55bb8405fa168_0",
+          "type": "function",
+          "function": {
+            "name": "Read",
+            "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file2.md\",\"offset\":592}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_f6093421f1263b89dff55bb8405fa168_0",
+      "content": "592\t- enclosure 6493 / flock 45: reading 47.67 at ... <Truncated in logs> ...f Meridian Aviary Husbandry Manual, volume 2.\n995\t"
+    },
+    {
+      "role": "assistant",
+      "content": "\n\nI've read the entire file (995 lines).\n\nThere is... <Truncated in logs> ...he question doesn't match the document's contents."
+    },
+    {
+      "role": "user",
+      "content": "Read the file stress-corpus/file3.md completely — ... <Truncated in logs> ...intenance Ledger? Reply with just the designation."
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_3ef4309b53ab97674231569fac329b9f_0",
+          "type": "function",
+          "function": {
+            "name": "Read",
+            "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file3.md\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_3ef4309b53ab97674231569fac329b9f_0",
+      "content": "1\t# Talgarth Textile Mill Maintenance Ledger\n2\t# D... <Truncated in logs> ... entry 16599. Cross-reference volume 3, annex G14."
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_bfc6bfc0379fe175b27e269cac3fcb2a_0",
+          "type": "function",
+          "function": {
+            "name": "Read",
+            "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file3.md\",\"offset\":591}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_bfc6bfc0379fe175b27e269cac3fcb2a_0",
+      "content": "591\t\n592\t## Section 3.51 — loom bank group 199, sh... <Truncated in logs> ...th Textile Mill Maintenance Ledger, volume 3.\n988\t"
+    },
+    {
+      "role": "assistant",
+      "content": "\n\nI've read the entire file (988 lines).\n\nNo desig... <Truncated in logs> ...he question doesn't match the document's contents."
+    },
+    {
+      "role": "user",
+      "content": "Read the file stress-corpus/file4.md completely — ... <Truncated in logs> ...on Plant Runbook? Reply with just the designation."
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_a62399387b6b7c85d9c95f33c888f7e2_0",
+          "type": "function",
+          "function": {
+            "name": "Read",
+            "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file4.md\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_a62399387b6b7c85d9c95f33c888f7e2_0",
+      "content": "1\t# Coastal Desalination Plant Runbook\n2\t# Documen... <Truncated in logs> ...d entry 89616. Cross-reference volume 4, annex E3."
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_19f6b50c2e8444a384bcdad00f2a5688_0",
+          "type": "function",
+          "function": {
+            "name": "Read",
+            "arguments": "{\"file_path\":\"/Users/yash/Desktop/Programming/local-setup/stress-corpus/file4.md\",\"offset\":578}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_19f6b50c2e8444a384bcdad00f2a5688_0",
+      "content": "578\t- membrane train 4266 / cycle 36: reading 25.2... <Truncated in logs> ...Coastal Desalination Plant Runbook, volume 4.\n971\t"
+    }
+  ],
+  "stream": true,
+  "max_tokens": 32000,
+  "reasoning_effort": "xhigh",
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "Agent",
+        "description": "Launch a new agent to handle complex, multi-step t... <Truncated in logs> ...er asks before it arrives, say it's still running.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "description": {
+              "description": "A short (3-5 word) description of the task",
+              "type": "string"
+            },
+            "prompt": {
+              "description": "The task for the agent to perform",
+              "type": "string"
+            },
+            "subagent_type": {
+              "description": "The type of specialized agent to use for this task",
+              "type": "string"
+            },
+            "model": {
+              "description": "Optional model override for this agent. Takes prec... <Truncated in logs> ...e: \"fork\" — forks always inherit the parent model.",
+              "type": "string",
+              "enum": [
+                "sonnet",
+                "opus",
+                "haiku",
+                "fable"
+              ]
+            },
+            "run_in_background": {
+              "description": "Agents run in the background by default; you will ... <Truncated in logs> ...he background so the user can hand you other work.",
+              "type": "boolean"
+            },
+            "isolation": {
+              "description": "Isolation mode. \"worktree\" creates a temporary git... <Truncated in logs> ...always runs in background; availability is gated).",
+              "type": "string",
+              "enum": [
+                "worktree",
+                "remote"
+              ]
+            }
+          },
+          "required": [
+            "description",
+            "prompt"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "Bash",
+        "description": "Executes a bash command and returns its output.\n\n-... <Truncated in logs> ...nversation's system-reminder, when one is present.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "command": {
+              "description": "The command to execute",
+              "type": "string"
+            },
+            "timeout": {
+              "description": "Optional timeout in milliseconds (max 600000)",
+              "type": "number"
+            },
+            "description": {
+              "description": "Clear, concise description of what this command do... <Truncated in logs> ...tch JSON from URL and extract data array elements\"",
+              "type": "string"
+            },
+            "run_in_background": {
+              "description": "Set to true to run this command in the background.",
+              "type": "boolean"
+            },
+            "dangerouslyDisableSandbox": {
+              "description": "Set this to true to dangerously override sandbox mode and run commands without sandboxing.",
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "command"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "CronCreate",
+        "description": "Schedule a prompt to be enqueued at a future time.... <Truncated in logs> ...obs.\n\nReturns a job ID you can pass to CronDelete.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "cron": {
+              "description": "Standard 5-field cron expression in local time: \"M... <Truncated in logs> ...es, \"30 14 28 2 *\" = Feb 28 at 2:30pm local once).",
+              "type": "string"
+            },
+            "prompt": {
+              "description": "The prompt to enqueue at each fire time.",
+              "type": "string"
+            },
+            "recurring": {
+              "description": "true (default) = fire on every cron match until de... <Truncated in logs> ...e-shot requests with pinned minute/hour/dom/month.",
+              "type": "boolean"
+            },
+            "durable": {
+              "description": "true = persist to .claude/scheduled_tasks.json and... <Truncated in logs> ...the user asks the task to survive across sessions.",
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "cron",
+            "prompt"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "CronDelete",
+        "description": "Cancel a cron job previously scheduled with CronCr... <Truncated in logs> ...r the in-memory session store (session-only jobs).",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "id": {
+              "description": "Job ID returned by CronCreate.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "id"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "CronList",
+        "description": "List all cron jobs scheduled via CronCreate, both durable (.claude/scheduled_tasks.json) and session-only.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {},
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "Edit",
+        "description": "Performs exact string replacement in a file.\n\n- Yo... <Truncated in logs> ...lace_all: true` replaces every occurrence instead.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "file_path": {
+              "description": "The absolute path to the file to modify",
+              "type": "string"
+            },
+            "old_string": {
+              "description": "The text to replace",
+              "type": "string"
+            },
+            "new_string": {
+              "description": "The text to replace it with (must be different from old_string)",
+              "type": "string"
+            },
+            "replace_all": {
+              "description": "Replace all occurrences of old_string (default false)",
+              "default": false,
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "file_path",
+            "old_string",
+            "new_string"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "EnterWorktree",
+        "description": "Use this tool ONLY when explicitly instructed to w... <Truncated in logs> ...nested inside it. Mutually exclusive with `name`.\n",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "name": {
+              "description": "Optional name for a new worktree. Each \"/\"-separat... <Truncated in logs> ...d if not provided. Mutually exclusive with `path`.",
+              "type": "string"
+            },
+            "path": {
+              "description": "Path to an existing worktree to switch into instea... <Truncated in logs> ...i-repo workspace). Mutually exclusive with `name`.",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "ExitWorktree",
+        "description": "Exit a worktree session created by EnterWorktree a... <Truncated in logs> ...ee can be called again to create a fresh worktree\n",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "action": {
+              "description": "\"keep\" leaves the worktree and branch on disk; \"remove\" deletes both.",
+              "type": "string",
+              "enum": [
+                "keep",
+                "remove"
+              ]
+            },
+            "discard_changes": {
+              "description": "Required true when action is \"remove\" and the work... <Truncated in logs> ...its. The tool will refuse and list them otherwise.",
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "action"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "ListAgents",
+        "description": "Lists agents you can SendMessage to — in-process s... <Truncated in logs> ...ws share it, or an error asks you to disambiguate.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "channel": {
+              "description": "Not available in this build; leave unset.",
+              "type": "string",
+              "maxLength": 256
+            },
+            "q": {
+              "description": "Not available in this build; leave unset.",
+              "type": "string",
+              "maxLength": 256
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "LSP",
+        "description": "Interact with Language Server Protocol (LSP) serve... <Truncated in logs> ...no server is available, an error will be returned.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "operation": {
+              "description": "The LSP operation to perform",
+              "type": "string",
+              "enum": [
+                "goToDefinition",
+                "findReferences",
+                "hover",
+                "documentSymbol",
+                "workspaceSymbol",
+                "goToImplementation",
+                "prepareCallHierarchy",
+                "incomingCalls",
+                "outgoingCalls"
+              ]
+            },
+            "filePath": {
+              "description": "The absolute or relative path to the file",
+              "type": "string"
+            },
+            "line": {
+              "description": "The line number (1-based, as shown in editors)",
+              "type": "integer",
+              "exclusiveMinimum": 0,
+              "maximum": 9007199254740991
+            },
+            "character": {
+              "description": "The character offset (1-based, as shown in editors)",
+              "type": "integer",
+              "exclusiveMinimum": 0,
+              "maximum": 9007199254740991
+            },
+            "query": {
+              "description": "The symbol name or partial name to search for (wor... <Truncated in logs> ..., so always provide it when using workspaceSymbol.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "operation",
+            "filePath",
+            "line",
+            "character"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "NotebookEdit",
+        "description": "Replaces, inserts, or deletes a single cell in a J... <Truncated in logs> ...d when inserting. Use `delete` to remove the cell.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "notebook_path": {
+              "description": "The absolute path to the Jupyter notebook file to edit (must be absolute, not relative)",
+              "type": "string"
+            },
+            "cell_id": {
+              "description": "The ID of the cell to edit. When inserting a new c... <Truncated in logs> ...ith this ID, or at the beginning if not specified.",
+              "type": "string"
+            },
+            "new_source": {
+              "description": "The new source for the cell",
+              "type": "string"
+            },
+            "cell_type": {
+              "description": "The type of the cell (code or markdown). If not sp... <Truncated in logs> ...type. If using edit_mode=insert, this is required.",
+              "type": "string",
+              "enum": [
+                "code",
+                "markdown"
+              ]
+            },
+            "edit_mode": {
+              "description": "The type of edit to make (replace, insert, delete). Defaults to replace.",
+              "type": "string",
+              "enum": [
+                "replace",
+                "insert",
+                "delete"
+              ]
+            }
+          },
+          "required": [
+            "notebook_path",
+            "new_source"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "Read",
+        "description": "Reads a file from the local filesystem.\n\n- `file_p... <Truncated in logs> ...failed, and the harness tracks file state for you.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "file_path": {
+              "description": "The absolute path to the file to read",
+              "type": "string"
+            },
+            "offset": {
+              "description": "The line number to start reading from. Only provide if the file is too large to read at once",
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "limit": {
+              "description": "The number of lines to read. Only provide if the file is too large to read at once.",
+              "type": "integer",
+              "exclusiveMinimum": 0,
+              "maximum": 9007199254740991
+            },
+            "pages": {
+              "description": "Page range for PDF files (e.g., \"1-5\", \"3\", \"10-20\"). Only applicable to PDF files. Maximum 20 pages per request.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "file_path"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "ReportFindings",
+        "description": "Report code-review findings as a typed list so the... <Truncated in logs> ...utcome` on each finding to what actually happened.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "level": {
+              "description": "Effort level the review ran at",
+              "type": "string",
+              "enum": [
+                "low",
+                "medium",
+                "high",
+                "xhigh",
+                "max"
+              ]
+            },
+            "findings": {
+              "description": "Verified findings, most-severe first; empty if none survived",
+              "maxItems": 32,
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "description": "Repo-relative path of the file the finding is in",
+                    "type": "string"
+                  },
+                  "line": {
+                    "description": "1-indexed line the finding anchors to",
+                    "type": "integer",
+                    "minimum": -9007199254740991,
+                    "maximum": 9007199254740991
+                  },
+                  "summary": {
+                    "description": "One-sentence statement of the defect",
+                    "type": "string"
+                  },
+                  "short_summary": {
+                    "description": "Compressed label for compact UI (≤60 chars): the claim alone, no rationale or consequence clause",
+                    "type": "string",
+                    "maxLength": 60
+                  },
+                  "failure_scenario": {
+                    "description": "Concrete inputs/state → wrong output/crash",
+                    "type": "string"
+                  },
+                  "category": {
+                    "description": "Short kebab-case slug of the finding type, e.g. \"correctness\", \"simplification\", \"efficiency\", \"test-coverage\"",
+                    "type": "string",
+                    "maxLength": 40
+                  },
+                  "verdict": {
+                    "description": "Set when a verify pass ran; absent on inline-only reviews",
+                    "type": "string",
+                    "enum": [
+                      "CONFIRMED",
+                      "PLAUSIBLE"
+                    ]
+                  },
+                  "outcome": {
+                    "description": "Set ONLY when re-reporting after applying fixes: what happened to this finding",
+                    "type": "string",
+                    "enum": [
+                      "fixed",
+                      "skipped",
+                      "no_change_needed"
+                    ]
+                  }
+                },
+                "required": [
+                  "file",
+                  "summary",
+                  "failure_scenario"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "findings"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "ScheduleWakeup",
+        "description": "Schedule when to resume work in /loop dynamic mode... <Truncated in logs> ...edict your cadence in advance — make it specific.\n",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "delaySeconds": {
+              "description": "Seconds from now to wake up. Clamped to [60, 3600] by the runtime. Required unless `stop` is true.",
+              "type": "number"
+            },
+            "reason": {
+              "description": "One short sentence explaining the chosen delay. Go... <Truncated in logs> ...user. Be specific. Required unless `stop` is true.",
+              "type": "string"
+            },
+            "prompt": {
+              "description": "The /loop input to fire on wake-up. Pass the same ... <Truncated in logs> ...tonomous-loop>>`). Required unless `stop` is true.",
+              "type": "string"
+            },
+            "stop": {
+              "description": "Set to true to end the dynamic loop immediately in... <Truncated in logs> ...er fields are ignored and no further wakeups fire.",
+              "type": "boolean"
+            },
+            "noop": {
+              "description": "true = nothing changed (you checked and there is n... <Truncated in logs> ...acked as a streak. Required unless `stop` is true.",
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "SendMessage",
+        "description": "# SendMessage\n\nSend a message to another agent.\n\n`... <Truncated in logs> ...ng). Route blocked work back to your user instead.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "to": {
+              "description": "Recipient: a name from ListAgents (append its \" [r... <Truncated in logs> ...mate name, \"main\", or a background agent's agentId",
+              "type": "string",
+              "allOf": [
+                {
+                  "pattern": "^[^\\n\\r]*$"
+                },
+                {
+                  "pattern": "^[\\s\\S]{0,300}$"
+                }
+              ]
+            },
+            "summary": {
+              "description": "A 5-10 word label for your own transcript row (not... <Truncated in logs> ... Truncated to 200 characters rather than rejected.",
+              "type": "string",
+              "maxLength": 200
+            },
+            "message": {
+              "default": "",
+              "description": "Plain text message content. The recipient's human ... <Truncated in logs> ...out — not a greeting, preamble, or bare @-mention.",
+              "type": "string"
+            },
+            "notify_when_idle": {
+              "description": "Ask a session ON THIS MACHINE to send you ONE noti... <Truncated in logs> ...subscription that costs the other session nothing.",
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "to",
+            "message"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "Skill",
+        "description": "Invoke a skill.\n\nA skill is a packaged set of inst... <Truncated in logs> ...d — follow it directly rather than calling again.\n",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "skill": {
+              "description": "The name of a skill from the available-skills list. Do not guess names.",
+              "type": "string"
+            },
+            "args": {
+              "description": "Optional arguments for the skill",
+              "type": "string"
+            }
+          },
+          "required": [
+            "skill"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "TaskStop",
+        "description": "\n- Stops a running background task by its ID\n- Tak... <Truncated in logs> ...ol when you need to terminate a long-running task\n",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "task_id": {
+              "description": "The ID of the background task to stop. Agent-team ... <Truncated in logs> ...ound agents are also accepted by agent ID or name.",
+              "type": "string"
+            },
+            "shell_id": {
+              "description": "Deprecated: use task_id instead",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "WebFetch",
+        "description": "Fetches a URL, converts the page to markdown, and ... <Truncated in logs> ...RL.\n- Responses are cached for 15 minutes per URL.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "url": {
+              "description": "The URL to fetch content from",
+              "type": "string",
+              "format": "uri"
+            },
+            "prompt": {
+              "description": "The prompt to run on the fetched content",
+              "type": "string"
+            }
+          },
+          "required": [
+            "url",
+            "prompt"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "WebSearch",
+        "description": "Search the web. Returns result blocks with titles ... <Truncated in logs> ...ces:\" list of the URLs you used as markdown links.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "query": {
+              "description": "The search query to use",
+              "type": "string",
+              "minLength": 2
+            },
+            "allowed_domains": {
+              "description": "Only include search results from these domains",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "blocked_domains": {
+              "description": "Never include search results from these domains",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "query"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "Workflow",
+        "description": "Execute a workflow script that orchestrates multip... <Truncated in logs> ...remove it with \"Dynamic workflow size\" in /config.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "script": {
+              "description": "Self-contained workflow script. Must begin with `e... <Truncated in logs> ... body using agent()/parallel()/pipeline()/phase().",
+              "type": "string",
+              "maxLength": 524288
+            },
+            "name": {
+              "description": "Name of a predefined workflow (built-in or from .claude/workflows/). Resolves to a self-contained script.",
+              "type": "string"
+            },
+            "description": {
+              "description": "Ignored — set the workflow description in the script's `meta` block.",
+              "type": "string"
+            },
+            "title": {
+              "description": "Ignored — set the workflow title in the script's `meta` block.",
+              "type": "string"
+            },
+            "args": {
+              "description": "Optional input value exposed to the script as the ... <Truncated in logs> ...erized named workflows (e.g. a research question)."
+            },
+            "scriptPath": {
+              "description": "Path to a workflow script file on disk. Every Work... <Truncated in logs> ...script. Takes precedence over `script` and `name`.",
+              "type": "string"
+            },
+            "resumeFromRunId": {
+              "description": "Run ID of a prior Workflow invocation to resume fr... <Truncated in logs> ...op the prior run first (TaskStop) before resuming.",
+              "type": "string",
+              "pattern": "^wf_[a-z0-9-]{6,}$"
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "Write",
+        "description": "Writes a file to the local filesystem, overwriting... <Truncated in logs> ... will fail. For partial changes, use Edit instead.",
+        "parameters": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "file_path": {
+              "description": "The absolute path to the file to write (must be absolute, not relative)",
+              "type": "string"
+            },
+            "content": {
+              "description": "The content to write to the file",
+              "type": "string"
+            }
+          },
+          "required": [
+            "file_path",
+            "content"
+          ],
+          "additionalProperties": false
+        }
+      }
+    }
+  ],
+  "stream_options": {
+    "include_usage": true
+  }
+}
+[2026-09-27 10:46:15][WARN][qwen-local] Reasoning setting 'xhigh' is not supported by model 'incoai/Qwen3.8-27B-Splash'. Supported settings: 'on', 'off'. Falling back to reasoning setting 'on'.
+[2026-09-27 10:46:15][INFO][qwen-local] Running chat completion on conversation with 24 messages.
+[2026-09-27 10:46:15][INFO][qwen-local] Streaming response...
+[2026-09-27 10:46:15][INFO][qwen-local] Prompt processing progress: 0.0%
+[2026-09-27 10:46:27][INFO][qwen-local] Prompt processing progress: 11.3%
+[2026-09-27 10:46:37][INFO][qwen-local] Prompt processing progress: 21.0%
+[2026-09-27 10:46:49][INFO][qwen-local] Prompt processing progress: 32.4%
+[2026-09-27 10:47:02][INFO][qwen-local] Prompt processing progress: 43.7%
+[2026-09-27 10:47:14][INFO][qwen-local] Prompt processing progress: 55.0%
+[2026-09-27 10:47:26][INFO][qwen-local] Prompt processing progress: 66.3%
+[2026-09-27 10:47:39][INFO][qwen-local] Prompt processing progress: 77.6%
+[2026-09-27 10:47:51][INFO][qwen-local] Prompt processing progress: 88.9%
+[2026-09-27 10:48:04][INFO][qwen-local] Prompt processing progress: 99.9%
+[2026-09-27 10:48:04][INFO][qwen-local] Prompt processing progress: 100.0%
+[2026-09-27 10:48:07][DEBUG] 10:48:07 Done · input 198,609 · cached 180,512 · output 141 · tools 21·d421ffe0 · TTFT 108.9s · 44.2 tok/s
+[2026-09-27 10:48:07][INFO][qwen-local] Finished streaming response

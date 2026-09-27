@@ -1,0 +1,24 @@
+SID=3cb26c2c-93df-47c2-b5b8-0cdcb078b694  started 2026-09-27 10:14:55  boottime=2166  panics=0
+idle wired=3.84GB free=90%  qwen-local    qwen3.8-27b-splash    IDLE      17.38 GB    262144     -           Local        
+TURN 1 file1 status=OK rc=0 wall=192s reqs=3 errs=0 depth=62418 recall=yes expect=TANGERINE-LYNX got="  TANGERINE-LYNX " wired=21.84GB free=61% lmsrss=1.08GB panics=0
+  input 16,157 · cached 0 · output 95 · tools 21·d421ffe0 · TTFT 31.4s · 50.2 tok/s
+  input 43,555 · cached 0 · output 148 · tools 21·d421ffe0 · TTFT 96.0s · 44.4 tok/s
+  input 62,418 · cached 43,552 · output 190 · tools 21·d421ffe0 · TTFT 53.2s · 36.2 tok/s
+TURN 2 file2 status=OK rc=0 wall=450s reqs=3 errs=0 depth=107484 recall=yes expect=COBALT-HERON got="  I've read the entire file (995 lines).  There is no designation in this file t" wired=27.57GB free=53% lmsrss=2.00GB panics=0
+  input 62,495 · cached 0 · output 66 · tools 21·c4e43cdf · TTFT 149.1s · 33.0 tok/s
+  input 89,097 · cached 15,680 · output 184 · tools 21·d421ffe0 · TTFT 212.3s · 34.8 tok/s
+  input 107,484 · cached 89,088 · output 333 · tools 21·d421ffe0 · TTFT 71.6s · 34.1 tok/s
+TURN 3 file3 status=OK rc=0 wall=526s reqs=3 errs=0 depth=154057 recall=yes expect=SAFFRON-MARMOT got="  I've read the entire file (988 lines).  No designation in this file identifies" wired=32.37GB free=44% lmsrss=2.73GB panics=0
+  input 107,652 · cached 107,456 · output 68 · tools 21·d421ffe0 · TTFT 1.2s · 28.7 tok/s
+  input 135,347 · cached 110,592 · output 66 · tools 21·d421ffe0 · TTFT 119.8s · 39.7 tok/s
+  input 154,057 · cached 135,328 · output 191 · tools 21·d421ffe0 · TTFT 94.2s · 36.3 tok/s
+TURN 4 file4 status=OK rc=0 wall=824s reqs=3 errs=0 depth=198609 recall=yes expect=INDIGO-PANGOLIN got="  I've read the entire file (971 lines).  No designation in this file identifies" wired=37.75GB free=31% lmsrss=1.40GB panics=0
+  input 154,222 · cached 154,048 · output 60 · tools 21·d421ffe0 · TTFT 1.3s · 38.2 tok/s
+  input 180,522 · cached 163,840 · output 65 · tools 21·d421ffe0 · TTFT 103.9s · 37.3 tok/s
+  input 198,609 · cached 180,512 · output 141 · tools 21·d421ffe0 · TTFT 108.9s · 44.2 tok/s
+TURN 5 file5 status=OK rc=0 wall=1347s reqs=5 errs=0 depth=227078 recall=yes expect=VERMILION-OSPREY got="  I've now read the entire file (all 996 lines, through the "# End of Almanac of" wired=44.79GB free=13% lmsrss=0.90GB panics=0
+  input 198,773 · cached 198,592 · output 119 · tools 21·d421ffe0 · TTFT 1.5s · 26.4 tok/s
+  input 225,711 · cached 212,992 · output 107 · tools 21·d421ffe0 · TTFT 87.7s · 29.9 tok/s
+  input 227,078 · cached 225,696 · output 7,847 · tools 21·d421ffe0 · TTFT 9.6s · 32.7 tok/s
+  input 35,872 · cached 10,752 · output 819 · tools 21·d421ffe0 · TTFT 57.6s · 39.9 tok/s
+  input 36,902 · cached 35,840 · output 555 · tools 21·d421ffe0 · TTFT 3.0s · 43.4 tok/s
